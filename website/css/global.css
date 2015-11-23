@@ -17,8 +17,8 @@ h6 {
 
 .topnav {
     font-size: 15px;
-    background-color: #c0392b;
-    border-bottom: 1px solid #c0392b;
+    background-color: #e65100;
+    border-bottom: 1px solid #e65100;
 }
 
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
@@ -26,5 +26,9 @@ h6 {
 }
 
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-brand:hover, .active-tab {
-    background-color: #e74c3c;
+    background-color: #ff6f00;
+}
+
+.move-down {
+    padding-top: 50px;
 }
