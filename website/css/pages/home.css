@@ -1,8 +1,5 @@
-/*!
- * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+/*All the necessary style for the home page*/
+
 
 .lead {
     font-size: 18px;
@@ -29,7 +26,7 @@
     font-size: 5em;
 }
 
-.intro-divider {
+.small-hr {
     width: 400px;
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.2);

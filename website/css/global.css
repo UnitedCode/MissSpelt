@@ -29,6 +29,10 @@ h6 {
     background-color: #ff6f00;
 }
 
+.navbar-brand {
+    font-size: 22px;
+}
+
 .move-down {
     padding-top: 50px;
 }
