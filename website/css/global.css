@@ -15,20 +15,24 @@ h6 {
     font-weight: 700;
 }
 
-.topnav {
-    font-size: 15px;
+.topnav, .navbar, .navbar.navbar-default {
+    font-size: 17px;
     background-color: #e65100;
     border-bottom: 1px solid #e65100;
 }
 
-.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand, {
     color: #333;
 }
 
-.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-brand:hover, .active-tab {
-    background-color: #ff6f00;
+.navbar .navbar-nav > li > a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .move-down {
     padding-top: 50px;
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.05);
 }
