@@ -18,15 +18,11 @@ h6 {
 .topnav, .navbar, .navbar.navbar-default {
     font-size: 17px;
     background-color: #e65100;
-    border-bottom: 1px solid #e65100;
+    border-bottom: none;
 }
 
-.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand, {
-    color: #333;
-}
-
-.navbar .navbar-nav > li > a:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+.navbar .navbar-nav > li > a:hover, .active {
+    border-bottom: white 3px solid
 }
 
 .navbar {
@@ -35,8 +31,4 @@ h6 {
 
 .move-down {
     padding-top: 50px;
-}
-
-.active {
-    background-color: rgba(0, 0, 0, 0.05);
 }
