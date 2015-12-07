@@ -1,0 +1,7 @@
+ .header {
+ background: url("../../img/reservations.jpg") no-repeat fixed center center / cover transparent;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
