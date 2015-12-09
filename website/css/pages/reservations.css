@@ -11,3 +11,12 @@
 #reserve-jumbo {
 	margin-top: 140px;
 }
+
+#reserve-jumbo h1 {
+	text-align: center;
+}
+
+#reserve-jumbo a {
+	text-align: center;
+	font-size: 18px;
+}
