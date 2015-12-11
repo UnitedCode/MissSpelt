@@ -22,3 +22,13 @@
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
+
+.header-color {
+	background-color: #E65100;
+	height: 200px;
+}
+
+.form-card {
+	position: relative;
+	top: -55px;
+}
