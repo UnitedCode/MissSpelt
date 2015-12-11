@@ -30,5 +30,23 @@
 
 .form-card {
 	position: relative;
-	top: -55px;
+	top: -55px;s
 }
+
+.form-group.is-focused .form-control .material-input:after {
+  background-color: #E65100;
+}
+
+.form-group.is-focused label,
+.form-group.is-focused label.control-label,
+.form-group.is-focused.label-placeholder label,
+.form-group.is-focused.label-placeholder label.control-label {
+  color: #E65100;
+}
+
+.form-group.is-focused .form-control {
+  outline: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E65100), to(#E65100)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+  background-image: -webkit-linear-gradient(#E65100, #E65100), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+  background-image: -o-linear-gradient(#E65100, #E65100), -o-linear-gradient(#D2D2D2, #D2D2D2);
+  background-image: linear-gradient(#E65100, #E65100), linear-gradient(#D2D2D2, #D2D2D2);
