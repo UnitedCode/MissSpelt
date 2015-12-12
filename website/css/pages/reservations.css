@@ -50,3 +50,13 @@
   background-image: -webkit-linear-gradient(#E65100, #E65100), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
   background-image: -o-linear-gradient(#E65100, #E65100), -o-linear-gradient(#D2D2D2, #D2D2D2);
   background-image: linear-gradient(#E65100, #E65100), linear-gradient(#D2D2D2, #D2D2D2);
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox-material .check {
+	color: #E65100;
+	border-color: #E65100;
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox-material .check::before {
+	color: #E65100;
+}
