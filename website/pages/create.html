@@ -72,8 +72,80 @@
 	</div>
 </div>
 
+<div class="header-color"></div>
 <div class="container">
-	<div class="header-color"></div>
+	<div class="jumbotron form-card">
+		<center>
+			<h2>Create a reservation</h2>
+		</center>
+		<form>
+			<fieldset>
+
+      <div class="form-group">
+        <h2 class="form-item-title">First Name</h2>
+        <div class="col-md-8">
+          <input type="text" class="form-control" id="firstName" placeholder="Enter text here">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <h2 class="form-item-title">Last Name</h2>
+        <div class="col-md-8">
+          <input type="text" class="form-control" id="lastName" placeholder="Enter text here">
+        </div>
+      </div>
+
+      <div class="form-group radio-group">
+      	<h2 class="form-item-title">Contact information</h2>
+      	<div class="radio">
+          <label id="r-phone">
+            <input type="radio" name="contact" value="phone" checked="checked"> Phone Number
+          </label>
+        </div>
+        <div class="radio">
+          <label id="r-email">
+            <input type="radio" name="contact" value="email">Email Address
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group label-floating col-md-8" id="phone">
+        <label class="control-label" for="phone">Phone number</label>
+        <input class="form-control" id="phone" type="text">
+      </div>
+
+      <div class="form-group label-floating hidden col-md-8" id="email">
+        <label class="control-label" for="email">Email Address</label>
+        <input class="form-control" id="email" type="text">
+      </div>
+
+      <div class="form-group col-md-4">
+        <h2 class="form-item-title" id="party-fix">Number of party members</h2>
+        <input class="form-control" type="number">
+      </div>
+
+      <div class="form-group">
+      	<h2 class="form-item-title">Location</h2>
+        <div class="col-md-8">
+          <select id="partyMembers" class="form-control">
+          	<option>Please select an option</option>
+            <option>Atlanta, Georgia</option>
+            <option>New York City, New York</option>
+            <option>Chicago, Illinois</option>
+            <option>Kansas City, Missouri</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group submit-button">
+        <div class="col-md-8">
+          <button type="submit" class="btn btn-raised btn-warning">Submit</button>
+        </div>
+      </div>
+
+      </fieldset>
+		</form>
+	</div>
 </div>
 
 <!-- jQuery -->
@@ -82,10 +154,14 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="../js/bootstrap.min.js"></script>
 
+<!-- Custom scripts for this page -->
+<script src="../js/pages/reservations.js"></script>
+
 <!-- Javascript files for the material design elements -->
 <script src="../js/material.min.js"></script>
 <script src="../js/ripples.min.js"></script>
 <script src="../js/delay.js"></script>
+
 </body>
 
 </html>

@@ -22,3 +22,83 @@
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
+
+.header-color {
+	background-color: #E65100;
+	height: 200px;
+}
+
+.form-card {
+	position: relative;
+	top: -55px;s
+}
+
+.form-group.is-focused .form-control .material-input:after {
+  background-color: #E65100;
+}
+
+.form-group.is-focused label,
+.form-group.is-focused label.control-label,
+.form-group.is-focused.label-placeholder label,
+.form-group.is-focused.label-placeholder label.control-label {
+  color: #E65100;
+}
+
+.form-group.is-focused .form-control {
+  outline: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E65100), to(#E65100)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+  background-image: -webkit-linear-gradient(#E65100, #E65100), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+  background-image: -o-linear-gradient(#E65100, #E65100), -o-linear-gradient(#D2D2D2, #D2D2D2);
+  background-image: linear-gradient(#E65100, #E65100), linear-gradient(#D2D2D2, #D2D2D2);
+}
+
+/*These styles chang the checkboxes color*/
+
+.checkbox input[type="checkbox"]:checked + .checkbox-material .check {
+	color: #E65100;
+	border-color: #E65100;
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox-material .check::before {
+	color: #E65100;
+}
+
+/*These styles chang the radio buttons color*/
+
+.radio input[type="radio"]:checked ~ .check {
+    background-color: #E65100;
+}
+
+.radio input[type="radio"]:checked ~ .circle {
+    border-color: #E65100;
+}
+
+.form-group {
+	clear: both;
+}
+
+.form-item-title {
+	font-size:20px;
+	clear: both;
+	margin-left: 14px;
+	padding-top: 15px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.radio-group {
+	clear: both;
+}
+
+.radio-group div {
+ display: inline-block;
+}
+
+.submit-button {
+	margin-top: 70px;
+}
+
+#party-fix {
+	margin-left:0; 
+	margin-top:0;
+}
