@@ -20,6 +20,15 @@ h6 {
 	padding-left: 150px;
 }
 
+.header-color {
+	background-color: #E65100;
+	height: 200px;
+}
+
+.header-element {
+	position: relative;
+	top: -55px;
+}
 
 .navbar .navbar-nav > li > a:hover, .active {
 	border-bottom: white 3px solid
