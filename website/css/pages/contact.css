@@ -1,0 +1,36 @@
+.address {
+
+}
+
+.contact img {
+	width: 375px;
+	margin: 0px auto 5px auto;
+	display: block;
+	border: 1px solid #bdc3c7;
+	border-radius: 3px;
+}
+
+.contact h2 {
+	margin-top: -5px;
+	margin-bottom: 17px;
+}
+
+.detail {
+	margin: 1px 0 0 0;
+}
+
+.email {
+
+}
+
+.hours {
+
+}
+
+.maps {
+
+}
+
+.phone {
+
+}
