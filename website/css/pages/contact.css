@@ -2,8 +2,12 @@
 
 }
 
-.contact {
-
+.contact img {
+	width: 375px;
+	margin: 0px auto 5px auto;
+	display: block;
+	border: 1px solid #bdc3c7;
+	border-radius: 3px;
 }
 
 .detail {
