@@ -15,11 +15,11 @@ h6 {
 	font-weight: 700;
 }
 
-.topnav, .navbar, .navbar.navbar-default {
-	font-size: 17px;
-	background-color: #e65100;
-	border-bottom: none;
+.container {
+	padding-right: 150px;
+	padding-left: 150px;
 }
+
 
 .navbar .navbar-nav > li > a:hover, .active {
 	border-bottom: white 3px solid
@@ -33,7 +33,8 @@ h6 {
 	padding-top: 50px;
 }
 
-.container {
-	padding-right: 150px;
-	padding-left: 150px;
+.topnav, .navbar, .navbar.navbar-default {
+	font-size: 17px;
+	background-color: #e65100;
+	border-bottom: none;
 }
