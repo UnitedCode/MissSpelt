@@ -11,7 +11,7 @@
 
 .menu-card {
 	margin-top: 20px;
-	height: 500px;
+	height: 300px;
 }
 
 .menu-card h1 {
@@ -20,6 +20,9 @@
 }
 .menu-card p {
 	text-align: center;
-	font-size: 35px;
+	font-size: 20px;
 }
+.price{
+/*position: absolute; bottom: 0;*/
+  }
 
