@@ -15,10 +15,19 @@ h6 {
 	font-weight: 700;
 }
 
-.topnav, .navbar, .navbar.navbar-default {
-	font-size: 17px;
-	background-color: #e65100;
-	border-bottom: none;
+.container {
+	padding-right: 150px;
+	padding-left: 150px;
+}
+
+.header-color {
+	background-color: #E65100;
+	height: 200px;
+}
+
+.header-element {
+	position: relative;
+	top: -55px;
 }
 
 .navbar .navbar-nav > li > a:hover, .active {
@@ -33,7 +42,8 @@ h6 {
 	padding-top: 50px;
 }
 
-.container {
-	padding-right: 150px;
-	padding-left: 150px;
+.topnav, .navbar, .navbar.navbar-default {
+	font-size: 17px;
+	background-color: #e65100;
+	border-bottom: none;
 }

@@ -23,14 +23,9 @@
 	margin-bottom: 25px;
 }
 
-.header-color {
-	background-color: #E65100;
-	height: 200px;
-}
-
 .form-card {
 	position: relative;
-	top: -55px;s
+	top: -55px;
 }
 
 .form-group.is-focused .form-control .material-input:after {
