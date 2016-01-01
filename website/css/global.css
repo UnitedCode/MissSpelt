@@ -20,6 +20,20 @@ h6 {
 	padding-left: 150px;
 }
 
+.fly-in {
+	opacity: 0;
+	-webkit-transform: translateY(220px);
+	transform: translateY(220px);
+	-webkit-transition: transform .95s cubic-bezier(.55, 0, .1, 1), opacity .5s cubic-bezier(.55, 0, .1, 1), box-shadow .5s cubic-bezier(.55, 0, .1, 1);
+	transition: transform .95s cubic-bezier(.55, 0, .1, 1), opacity .5s cubic-bezier(.55, 0, .1, 1), box-shadow .5s cubic-bezier(.55, 0, .1, 1);
+}
+
+.fly-in.loaded {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
 .header-color {
 	background-color: #E65100;
 	height: 200px;
