@@ -1,3 +1,4 @@
+
 .address {
 
 }
@@ -23,12 +24,21 @@
 
 }
 
+.g-map {
+	text-align: center;
+}
+
+.g-map iframe {
+	width: 600px;
+	height: 450px;
+}
+
 .hours {
 
 }
 
-.maps {
-
+.modal-dialog {
+	width: 700px;
 }
 
 .phone {
