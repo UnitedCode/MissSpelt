@@ -33,7 +33,7 @@
 
 	<!-- Custom Fonts -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -62,7 +62,6 @@
 					<li><a href="javascript:delay('../index.html')" onfocus="this.blur();">Home</a></li>
 					<li><a href="javascript:delay('menu.html')" onfocus="this.blur();">Menu</a></li>
 					<li><a href="javascript:delay('reservations.html')" onfocus="this.blur();">Reservations</a></li>
-					<li><a href="javascript:delay('locations.html')" onfocus="this.blur();">Locations</a></li>
 			  </ul>
 			  <ul class="nav navbar-nav navbar-right">
 				<li><a href="javascript:delay('contact.html')" onfocus="this.blur();" class="active">Contact</a></li>
@@ -75,18 +74,21 @@
 </div>
 
 <div class="header-color"></div>
-<div class="container header-element">
+<div class="container header-element fly-in" produces="intro-animation-up">
 	<div class="jumbotron">
 		<div class="text-center">
 			<h1>Contact Us</h1>
-			<p></p>
+			<p>MissSpelt! has locations all over the country. Whether you're in Chicago or New York, rest assured that there will be a place for you to eat delicious gluten-free products at any of our locations.</p>
+			<p>If you're looking to make a reservation you can call any of our loactions with the phone numbers below, or you can head over to our <a href="reservations.html">reservations page</a> and reserve online</p>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-6">
 			<div class="well contact">
 				<h2 class="text-center">Chicago</h2>
-				<img src="../img/contact/chicago.png">
+				<a href="#" data-toggle="modal" data-target="#chicagoModal">
+					<img src="../img/contact/chicago.png">
+				</a>
 				<p class="address detail">
 					<i class="fa fa-map-marker"></i>
 					<span>
@@ -116,11 +118,13 @@
 		<div class="col-md-6">
 			<div class="well contact">
 				<h2 class="text-center">Atlanta</h2>
-				<img src="../img/contact/atlanta.png">
+				<a href="#" data-toggle="modal" data-target="#atlantaModal">
+					<img src="../img/contact/atlanta.png">
+				</a>
 				<p class="address detail">
 					<i class="fa fa-map-marker"></i>
 					<span>
-						<b>Address: </b>1 Martin Luther King Jr Dr SW, Atlanta, GA 30314
+						<b>Address: </b>1 M. L. K. Jr Dr SW, Atlanta, GA 30314
 					</span>
 				</p>
 				<p class="phone detail">
@@ -148,7 +152,9 @@
 		<div class="col-md-6">
 			<div class="well contact">
 				<h2 class="text-center">Kansas City</h2>
-				<img src="../img/contact/kansasCity.png">
+				<a href="#" data-toggle="modal" data-target="#kcModal">
+					<img src="../img/contact/kansasCity.png">
+				</a>
 				<p class="address detail">
 					<i class="fa fa-map-marker"></i>
 					<span>
@@ -178,7 +184,9 @@
 		<div class="col-md-6">
 			<div class="well contact">
 				<h2 class="text-center">New York City</h2>
-				<img src="../img/contact/newYork.png">
+				<a href="#" data-toggle="modal" data-target="#nycModal">
+					<img src="../img/contact/newYork.png">
+				</a>
 				<p class="address detail">
 					<i class="fa fa-map-marker"></i>
 					<span>
@@ -208,8 +216,81 @@
 	</div>
 </div>
 
+<div class="modal fade" id="chicagoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>Chicago</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="atlantaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>Atlanta</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="kcModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>Kansas City</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="nycModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>New York City</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- jQuery -->
 <script src="../js/jquery.min.js"></script>
+
 
 <!-- Bootstrap Core JavaScript -->
 <script src="../js/bootstrap.min.js"></script>
@@ -219,8 +300,9 @@
 
 <!-- Javascript files for the material design elements -->
 <script src="../js/material.min.js"></script>
+<script src="../js/script.js"></script>
 <script src="../js/ripples.min.js"></script>
-<script src="../js/delay.js"></script>
+
 
 </body>
 
