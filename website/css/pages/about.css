@@ -1,0 +1,68 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	position: relative;
+}
+
+.active a div {
+	background-color: #E65100;
+}
+
+.main {
+	height: 100%;
+}
+
+.side-nav {
+	position: fixed;
+	top: 50%;
+	left: 95%;
+	transform: translate(-50%, -50%);
+}
+
+.side-nav ul {
+	list-style: none;
+}
+
+.side-nav ul li a:hover {
+	background-color: transparent;
+}
+
+.side-nav ul li a {
+	padding: 0;
+}
+
+.circle-btn {
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	background-color: transparent;
+	border: 1px solid #E65100;
+	margin: 5px;
+}	
+
+#section-1, #section-2, #section-3, #section-4 {
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#section-1 {
+	background: url("../../img/reservations.jpg") no-repeat center center / cover transparent;
+}
+
+#section-2 {
+	background: url("../../img/reservations.jpg") no-repeat center center / cover transparent;
+}
+
+#section-3 {
+	background: url("../../img/reservations.jpg") no-repeat center center / cover transparent;
+}
+
+#section-4 {
+	background: url("../../img/reservations.jpg") no-repeat center center / cover transparent;
+}

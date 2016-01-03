@@ -67,7 +67,7 @@ footer h1 {
 	top: -55px;
 }
 
-.navbar .navbar-nav > li > a:hover, .active {
+.navbar .navbar-nav > li > a:hover, .active-tab {
 	border-bottom: white 3px solid
 }
 
@@ -76,12 +76,18 @@ footer h1 {
 }
 
 .main {
-	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+	box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.8);
 }
 
 
 .move-down {
 	padding-top: 50px;
+}
+
+.shadow-bottom {
+	-moz-box-shadow:0 8px 8px rgba(0, 0, 0, 0.8);
+	-webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.8);
+	box-shadow: 0 8px 8px rgba(0, 0, 0, 0.8);
 }
 
 .topnav, .navbar, .navbar.navbar-default {
