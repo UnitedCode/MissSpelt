@@ -14,6 +14,10 @@ h6 {
 	font-weight: 700;
 }
 
+body {
+	background-color: #FFFFFF;
+}
+
 footer {
   position: relative;
   z-index: -2;
