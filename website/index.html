@@ -82,19 +82,23 @@
 		<i class="fa fa-angle-down fa-5x"></i>
 	</a>
 </div>
-<div id="section-1"></div>
+<div id="section-1">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="panel panel-primary">
+			  <div class="panel-heading">
+			    <h3 class="panel-title">Panel danger</h3>
+			  </div>
+			  <div class="panel-body">
+			    Panel content
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>
 
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
-
-<script type="text/javascript">
-	$('#Parallax-content').mousemove(function(e) {
-   var amountMovedX = (e.pageX * -0.3 / 6);
-   var amountMovedY = (e.pageY * -1.29 / 6);
-   $(this).css('background-position', amountMovedX + 'px ' + amountMovedY + 'px ');
-	});
-</script>
-
 
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>

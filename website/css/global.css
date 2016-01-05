@@ -92,6 +92,14 @@ footer h1 {
 	padding-top: 50px;
 }
 
+.panel.panel-primary > .panel-heading {
+  background-color: #E65100;
+}
+
+.panel-title  {
+	font-size: 40px;
+}
+
 .shadow-bottom {
 	-moz-box-shadow:0 8px 8px rgba(0, 0, 0, 0.8);
 	-webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.8);
