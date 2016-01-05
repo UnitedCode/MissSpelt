@@ -32,7 +32,7 @@
 	<link href="css/pages/home.css" rel="stylesheet">
 
 	<!-- Custom Fonts -->
-	<link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -72,18 +72,28 @@
 	</div>
 </div>
 
-<div class="h-header">
-	<img src="img/logo.png">
+<div class="h-header" id="Parallax-content">
+	<div class="logo">
+		<img src="img/logo.png">
+	</div>
 </div>
 <div class="next-section">
 	<a href="#section-1" class="arrow-wrap">
-		<span class="arrow"></span>
+		<i class="fa fa-angle-down fa-5x"></i>
 	</a>
 </div>
 <div id="section-1"></div>
 
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$('#Parallax-content').mousemove(function(e) {
+   var amountMovedX = (e.pageX * -0.3 / 6);
+   var amountMovedY = (e.pageY * -1.29 / 6);
+   $(this).css('background-position', amountMovedX + 'px ' + amountMovedY + 'px ');
+	});
+</script>
 
 
 <!-- Bootstrap Core JavaScript -->

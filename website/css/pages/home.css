@@ -4,16 +4,21 @@ body, html {
 
 .h-header {
 	height:calc(100% - 6em);
-  background-color: #E65100;
+  background: url("../../img/home.jpg") no-repeat fixed center center / cover transparent;
   width:100%;
+  background-size: 1920px;
+  height: 90vh;
+  background-repeat: no-repeat;
 }
 
-.h-header img {
-	height: 375px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 150px;
+.logo img {
+  background-color: rgba(0,0,0,.35);
+  height: 275px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 126px;
 }
 
 .next-section {
@@ -29,7 +34,7 @@ body, html {
   left:50%;
   top:-5em;
   margin-left:-5em;
-  background:#111;
+  background:#E65100;
   width:10em;
   height:10em;
   padding:4em 2em;
@@ -37,6 +42,22 @@ body, html {
   font-size:0.5em;
   display:block;
   box-shadow:0px 0px 5px 0px #333;
+}
+
+.arrow-wrap i {
+  display:inline-block;
+  font-size: 6em
+  line-height: 50px;
+  color:white;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.arrow-wrap i:before {
+  position: relative;
+  top: -9px;
+  left: -4px;
 }
 
 /* a triangle to make the main part of the arrow. Adjust the border-color to fit your needs */
