@@ -75,6 +75,11 @@ footer h1 {
 	top: -55px;
 }
 
+.nav-container {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
 .navbar .navbar-nav > li > a:hover, .active-tab {
 	border-bottom: white 3px solid
 }
