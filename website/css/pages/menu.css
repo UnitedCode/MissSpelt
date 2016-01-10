@@ -4,11 +4,11 @@ body, html {
 
 .active {
   background-color: #FFFFFF;
-  box-shadow: none !important;
 }
 
 .nav-tabs > .active > a {
   color: black !important;
+  box-shadow: none !important;
 }
 
 .container2 {
@@ -17,8 +17,8 @@ body, html {
 }
 
 .container {
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: 75px;
+    padding-left: 75px;
 }
 
 .header {
@@ -44,16 +44,12 @@ body, html {
 }
 
 .menu-box > .nav-tabs {
-    background: #E65100 none repeat scroll 0% 0%;
+  background: #E65100 none repeat scroll 0% 0%;
 }
 
 .menu-box > .nav-tabs a {
-    color: #FFFFFF;
-    font-size: 2em;
-}
-
-.menu-box > .nav-tabs li {
-
+  color: #FFFFFF;
+  font-size: 2em;
 }
 
 .menu-box > .nav-tabs li:hover, .menu-box > .nav-tabs li:focus, .menu-box > .nav-tabs a:hover, .menu-box > .nav-tabs a:focus {
@@ -62,7 +58,7 @@ body, html {
 }
 
 .menu-box.well {
-  margin: 0 !important;
+  margin-top: 100px !important;
   padding: 0 !important;
 }
 
@@ -79,6 +75,10 @@ body, html {
 .menu-card p {
 	text-align: center;
 	font-size: 15px;
+}
+
+.nav-tabs > li {
+  padding: 0 !important;
 }
 
 .price {
