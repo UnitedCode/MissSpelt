@@ -72,12 +72,36 @@
 </div>
 
 <div class="header move-down"></div>
+	<div class="container">
+		<div class="well menu-box">
+		  <ul class="nav nav-tabs" role="tablist" id="myTabs">
+		    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+		    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+		    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+		    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+		  </ul>
+		  <div class="tab-content">
+		    <div role="tabpanel" class="tab-pane fade in active" id="home">Home</div>
+		    <div role="tabpanel" class="tab-pane fade" id="profile">Profile</div>
+		    <div role="tabpanel" class="tab-pane fade" id="messages">...</div>
+		    <div role="tabpanel" class="tab-pane fade" id="settings">...</div>
+		  </div>
+		</div>
+	</div>
+</div>
 
 <!-- jQuery -->
 <script src="../js/jquery.min.js"></script> 
 
 <!-- Bootstrap Core JavaScript -->
 <script src="../js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+	$('#myTabs a').click(function (e) {
+	  e.preventDefault()
+	  $(this).tab('show')
+	})
+</script>
 
 <!-- Javascript files for the material design elements -->
 <script src="../js/material.min.js"></script>

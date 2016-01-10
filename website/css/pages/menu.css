@@ -24,6 +24,14 @@
  	margin-top: 20px;
 }
 
+.menu-box>.nav-tabs {
+    background: #FFFFFF none repeat scroll 0% 0%;
+}
+
+.menu-box>.nav-tabs a {
+    color: black !important;
+}
+
 .menu-card {
 	margin-top: 20px;
 	height: 300px;
