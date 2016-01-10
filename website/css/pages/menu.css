@@ -1,6 +1,24 @@
+body, html {
+  height: 100%;
+}
+
+.active {
+  background-color: #FFFFFF;
+  box-shadow: none !important;
+}
+
+.nav-tabs > .active > a {
+  color: black !important;
+}
+
 .container2 {
   padding-right: 5%;
   padding-left: 5%;
+}
+
+.container {
+    padding-right: 100px;
+    padding-left: 100px;
 }
 
 .header {
@@ -10,6 +28,7 @@
   background-size: cover;
   -o-background-size: cover;
   width: 100%;
+  height: 100%;
 
 }
 
@@ -24,12 +43,27 @@
  	margin-top: 20px;
 }
 
-.menu-box>.nav-tabs {
-    background: #FFFFFF none repeat scroll 0% 0%;
+.menu-box > .nav-tabs {
+    background: #E65100 none repeat scroll 0% 0%;
 }
 
-.menu-box>.nav-tabs a {
-    color: black !important;
+.menu-box > .nav-tabs a {
+    color: #FFFFFF;
+    font-size: 2em;
+}
+
+.menu-box > .nav-tabs li {
+
+}
+
+.menu-box > .nav-tabs li:hover, .menu-box > .nav-tabs li:focus, .menu-box > .nav-tabs a:hover, .menu-box > .nav-tabs a:focus {
+  background-color: #FFFFFF;
+  color: black !important;
+}
+
+.menu-box.well {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .menu-card {
@@ -51,3 +85,6 @@
 /*position: absolute; bottom: 0;*/
   }
 
+.tab-pane > .row {
+  margin-top: 20px;
+}
