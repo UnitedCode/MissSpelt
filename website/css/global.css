@@ -20,7 +20,7 @@ body {
 
 footer {
   position: relative;
-  z-index: -2;
+  z-index: 1;
   height: 300px;
   background: none repeat scroll 0% 0% #E65100;
   font-size: 12px;
@@ -42,13 +42,42 @@ footer h1 {
   font-size: 2.125rem;
 }
 
+footer > .row {
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+	bottom: 110px;
+}
+
+
 .btn.btn-raised.btn-warning {
 	background-color: #E65100;
+}
+
+.copyright {
+	z-index: 1 !important;
+}
+
+.social-btns ul {
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+}
+
+.social-btns ul li {
+	display: inline-block;s
+}
+
+.social-btns i {
 }
 
 .container {
 	padding-right: 150px;
 	padding-left: 150px;
+}
+
+.f-logo img {
+	width: 200px;
 }
 
 .fly-in {
@@ -95,6 +124,8 @@ footer h1 {
 
 .main {
 	box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.8);
+	z-index: 10;
+	position: relative;
 }
 
 .move-down {
@@ -128,4 +159,42 @@ footer h1 {
 	font-size: 17px;
 	background-color: #e65100;
 	border-bottom: none;
+}
+
+#facebook i, #reddit i, #twitter i {
+	color: #FFFFFF;
+}
+
+#facebook a:hover > i {
+	color: #3B5998;
+}
+
+#googleplus {
+	position: relative;
+	top: -15px;
+	left: 1px;
+}
+
+#googleplus .fa-circle {
+	color: #FFFFFF
+}
+
+#googleplus .fa-google-plus {
+	color: #E65100
+}
+
+#googleplus a:hover > span > .fa-circle {
+	color: #DC4E41;
+}
+
+#googleplus a:hover > span > .fa-google-plus {
+	color: #FFFFFF;
+}
+
+#reddit a:hover > i {
+	color: #cee3f8;
+}
+
+#twitter a:hover > i {
+	color: #55ACEE;
 }
