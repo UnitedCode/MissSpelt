@@ -1,0 +1,108 @@
+body, html {
+	height: 100%
+}
+
+/* the wrapper element that will become the outer circle */
+.arrow-wrap {
+  position:absolute;
+  z-index:1;
+  left:50%;
+  top:-5em;
+  margin-left:-5em;
+  background:#E65100;
+  width:10em;
+  height:10em;
+  padding:4em 2em;
+  border-radius:50%;
+  font-size:0.5em;
+  display:block;
+  box-shadow:0px 0px 5px 0px #333;
+}
+
+.arrow-wrap i {
+  display:inline-block;
+  font-size: 6em
+  line-height: 50px;
+  color:white;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.arrow-wrap i:before {
+  position: relative;
+  top: -9px;
+  left: -4px;
+}
+
+.h-header {
+	height:calc(100% - 6em);
+  background: url("https://i.imgur.com/UAMOjus.jpg") no-repeat fixed center center / cover transparent;
+  width:100%;
+  background-size: 2000px;
+  height: 90%;
+  background-repeat: no-repeat;
+}
+
+.logo h2 {
+  color: #FFFFFF;
+  position: relative;
+  top: 115px;
+  background-color: rgba(0,0,0,.35);
+  width: 550px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.logo img {
+  background-color: rgba(0,0,0,.35);
+  width: 550px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 126px;
+}
+
+.next-section {
+  width:100%;
+  position:relative;
+  background-color: #E65100;
+}
+
+.section-1-desc i {
+  font-size: 6em;
+  color: #E65100;
+}
+
+.panel-body p {
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+
+.panel-img {
+  height: 300px;
+  display: block;
+  margin: 10px auto;
+}
+
+#reservations a {
+  margin-top: 30px;
+}
+
+#reviews a {
+  margin-top: 50px
+}
+
+#section-1 {
+  height: 100%;
+}
+
+#section-1-panel {
+  margin: 100px 50px 50px 50px;
+}
+
+#section-1-2 {
+  margin-top: 100px;
+}

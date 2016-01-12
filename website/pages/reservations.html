@@ -46,52 +46,64 @@
 
 <body>
 
-<div class="bs-component">
-	<div class="navbar navbar-default navbar-fixed-top">
-	  <div class="container">
-			<div class="navbar-header">
-			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-warning-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-			  </button>
-			  <a class="navbar-brand" href="javascript:delay('../index.html')" onfocus="this.blur();">MissSpelt!</a>
+<div class="main">
+	<div class="bs-component">
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="nav-container">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-warning-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="javascript:delay('../index.html')" onfocus="this.blur();"><img src="../img/logo-2.png"></a>
+				</div>
+				<div class="navbar-collapse collapse navbar-warning-collapse">
+				  <ul class="nav navbar-nav">
+						<li><a href="javascript:delay('../index.html')" onfocus="this.blur();">Home</a></li>
+						<li><a href="javascript:delay('menu.html')" onfocus="this.blur();">Menu</a></li>
+						<li><a href="javascript:delay('reservations.html')" onfocus="this.blur();" class="active-tab">Reservations</a></li>
+						<li><a href="javascript:delay('reviews.html')" onfocus="this.blur();">Reviews</a></li>
+				  </ul>
+				  <ul class="nav navbar-nav navbar-right">
+					<li><a href="javascript:delay('contact.html')" onfocus="this.blur();">Contact</a></li>
+					<li><a href="javascript:delay('about.html')" onfocus="this.blur();">About</a></li>
+				  </ul>
+				</div>
 			</div>
-			<div class="navbar-collapse collapse navbar-warning-collapse">
-			  <ul class="nav navbar-nav">
-					<li><a href="javascript:delay('../index.html')" onfocus="this.blur();">Home</a></li>
-					<li><a href="javascript:delay('menu.html')" onfocus="this.blur();">Menu</a></li>
-					<li><a href="javascript:delay('reservations.html')" onfocus="this.blur();" class="active">Reservations</a></li>
-			  </ul>
-			  <ul class="nav navbar-nav navbar-right">
-				<li><a href="javascript:delay('contact.html')" onfocus="this.blur();">Contact</a></li>
-				<li><a href="javascript:delay('about.html')" onfocus="this.blur();">About</a></li>
-			  </ul>
-			</div>
-	  </div>
+		</div>
 	</div>
-</div>
 
-<div class="header container">
-	<div class="row move-down fly-in" produces="intro-animation-up">
-		<div class="col-md-12">
-			<div class="jumbotron" id="reserve-jumbo">
-				<h1>Reservations</h1>
-				<p>Making a reservation at MissSpelt! is a great way to make sure that you and all of your party will have seating at our restraunts. All that's necessary to reserve is your name, a date, the number of people in your party, and a phone or email address for verification. Checking on your reservations is just as easy, just enter your email or phone number and your name and your reservation will be shown.</p>
-				<div class="row">
-					<div class="col-md-3 col-md-offset-3 text-center">
-						<a href="javascript:delay('create.html')" class="btn btn-raised btn-warning">Create</a>
+	<div class="header">
+		<div class="container">
+			<div class="row move-down fly-in" produces="intro-animation-up">
+				<div class="col-md-12">
+					<div class="jumbotron" id="reserve-jumbo">
+						<h1>Reservations</h1>
+						<p>Making a reservation at MissSpelt! is a great way to make sure that you and all of your party will have seating at our restraunts. All that's necessary to reserve is your name, a date, the number of people in your party, and a phone or email address for verification. Checking on your reservations is just as easy, just enter your email or phone number and your name and your reservation will be shown.</p>
+						<div class="row">
+							<div class="col-md-3 col-md-offset-3 text-center">
+								<a href="javascript:delay('create.html')" class="btn btn-raised btn-warning">Create</a>
+							</div>
+							<div class="col-md-3 text-center">
+								<a href="javascript:delay('check.html')" class="btn btn-raised btn-warning">Check</a>
+							</div>
+						</div>
 					</div>
-					<div class="col-md-3 text-center">
-						<a href="javascript:delay('check.html')" class="btn btn-raised btn-warning">Check</a>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
+<footer>
+  <h1>Hi, I'm a Fixed-Footer!</h1>
+</footer>
+
 <!-- jQuery -->
 <script src="../js/jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.29/angular.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="../js/bootstrap.min.js"></script>
