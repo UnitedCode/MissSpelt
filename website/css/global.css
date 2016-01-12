@@ -102,6 +102,10 @@ footer > .row {
 	transform: translateY(0px);
 }
 
+.f-main {
+	height: 100%;
+}
+
 .header-color {
 	background-color: #E65100;
 	height: 200px;
@@ -167,6 +171,11 @@ footer > .row {
 	font-size: 17px;
 	background-color: #e65100;
 	border-bottom: none;
+}
+
+.y-video > iframe {
+	width: 560px;
+	height: 315px;
 }
 
 #facebook i, #reddit i, #twitter i {

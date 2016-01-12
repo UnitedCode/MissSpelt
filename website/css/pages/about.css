@@ -15,9 +15,6 @@ body {
 	background: url("../../img/about.jpg") no-repeat; 
 }
 
-.main {
-	height: 100%;
-}
 
 .side-nav {
 	position: fixed;
