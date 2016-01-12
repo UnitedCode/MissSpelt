@@ -1,30 +1,66 @@
+body, html {
+  width: 100%;
+  height: 100%;
+}
 
- .container2 {
+.active {
+  background-color: #FFFFFF;
+}
+
+.nav-tabs > .active > a {
+  color: black !important;
+  box-shadow: none !important;
+}
+
+.container {
   padding-right: 5%;
   padding-left: 5%;
 }
 
-
-
- .header {
+.header {
 	background: url("../../img/menu.jpg") no-repeat fixed center center ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   width: 100%;
+  height: 97.4%;
 
 }
 
- .jumbotron{
+.jumbotron {
  	margin-top: 50px;
  	margin-bottom: 10px;
  	padding: 2px;
 
- }
- .jumbo-fix{
+}
+
+.jumbo-fix {
  	margin-top: 20px;
- }
+}
+
+.main {
+  height: 100%;
+}
+
+.menu-box > .nav-tabs {
+  background: #E65100 none repeat scroll 0% 0%;
+}
+
+.menu-box > .nav-tabs a {
+  color: #FFFFFF;
+  font-size: 2em;
+}
+
+.menu-box > .nav-tabs li:hover, .menu-box > .nav-tabs li:focus, .menu-box > .nav-tabs a:hover, .menu-box > .nav-tabs a:focus {
+  background-color: #FFFFFF;
+  color: black !important;
+}
+
+.menu-box.well {
+  margin-top: 100px !important;
+  padding: 0 !important;
+}
 
 .menu-card {
 	margin-top: 20px;
@@ -35,11 +71,16 @@
 	text-align: center;
 	font-size: 30px;
 }
+
 .menu-card p {
 	text-align: center;
 	font-size: 15px;
 }
-.price{
-/*position: absolute; bottom: 0;*/
-  }
 
+.nav-tabs > li {
+  padding: 0 !important;
+}
+
+.tab-pane > .row {
+  margin-top: 20px;
+}

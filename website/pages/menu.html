@@ -9,7 +9,9 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>MissSpelt!</title>
+	<meta property="og:image" content="http://i.imgur.com/JYD5bDa.jpg">
+
+	<title>MissSpelt! | Menu</title>
 
 	<!--Favicon-->
 	<link rel='shortcut icon' href='../favicon.ico' type='image/x-icon'/ >
@@ -48,7 +50,7 @@
 <div class="main">
 	<div class="bs-component">
 		<div class="navbar navbar-default navbar-fixed-top">
-		  <div class="container">
+		  <div class="nav-container">
 				<div class="navbar-header">
 				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-warning-collapse">
 						<span class="icon-bar"></span>
@@ -62,6 +64,7 @@
 						<li><a href="javascript:delay('../index.html')" onfocus="this.blur();">Home</a></li>
 						<li><a href="javascript:delay('menu.html')" onfocus="this.blur();"  class="active-tab">Menu</a></li>
 						<li><a href="javascript:delay('reservations.html')" onfocus="this.blur();">Reservations</a></li>
+						<li><a href="javascript:delay('reviews.html')" onfocus="this.blur();">Reviews</a></li>
 				  </ul>
 				  <ul class="nav navbar-nav navbar-right">
 					<li><a href="javascript:delay('contact.html')" onfocus="this.blur();">Contact</a></li>
@@ -69,204 +72,280 @@
 				  </ul>
 				</div>
 		  </div>
-		</div>
+		</div>^
 	</div>
 
-	<div class="header container2 move-down">
-		<div class="container2 header-element fly-in" produces="intro-animation-up">
-			<div class="jumbotron">
-				<div class="text-center">
-					<h1>Menu</h1>		
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-3">
-					<div class="well menu-card">				
-						<h1>Rice Sandwich</h1>
-						<p>A sandwich made with all your favorite sandwich toppings served on rice cakes.</p>
-						<div ><p class="price"><b>Price</b> $3.99</p></div>		
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="well menu-card">				
-						<h1>Pizza</h1>
-						<p>Build a pizza with all of your favorite topping served completely gluten free.</p>
-						<div ><p class="price"><b>Price</b> $5.99</p></div>						
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="well menu-card">				
-						<h1>Tacos</h1>
-						<p>Build your own taco to accommodate your taste and presences.</p>
-						<div ><p class="price"><b>Price</b> $4.99</p></div>					
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="well menu-card">				
-						<h1>spaghetti</h1>
-						<p>Your favorite Italian food served gluten free.</p>
-						<div ><p class="price"><b>Price</b> $7.99</p></div>					
-					</div>
-				</div>
-			</div>
-
-			<div class="jumbotron jumbo-fix">
-				<div class="text-center">
-					<h1>Salads</h1>				
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-3">
-					<div class="well menu-card">				
-						<h1>Title</h1>
-						<p>Description of item</p>
-						<div ><p class="price"><b>Price</b> $7.99</p></div>						
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="well menu-card">				
-						<h1>Title</h1>
-						<p>Description of item</p>
-						<div ><p class="price"><b>Price</b> $7.99</p></div>					
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="well menu-card">				
-						<h1>Title</h1>
-						<p>Description of item</p>
-						<div ><p class="price"><b>Price</b> $7.99</p></div>				
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="well menu-card">				
-						<h1>Title</h1>
-						<p>Description of item</p>
-						<div ><p class="price"><b>Price</b> $7.99</p></div>						
-					</div>
-				</div>
-			</div>
-
-			<div class="jumbotron jumbo-fix">
-				<div class="text-center">
-					<h1>Desserts</h1>				
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-3">
-					<div class="well menu-card">				
-						<h1>Title</h1>
-						<p>Description of item</p>
-						<div ><p class="price"><b>Price</b> $7.99</p></div>						
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="well menu-card">				
-						<h1>Title</h1>
-						<p>Description of item</p>
-						<div ><p class="price"><b>Price</b> $7.99</p></div>					
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="well menu-card">				
-						<h1>Title</h1>
-						<p>Description of item</p>
-						<div ><p class="price"><b>Price</b> $7.99</p></div>				
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="well menu-card">				
-						<h1>Title</h1>
-						<p>Description of item</p>
-						<div ><p class="price"><b>Price</b> $7.99</p></div>						
-					</div>
-				</div>
+	<div class="header move-down">
+		<div class="container">
+			<div class="menu-box well fly-in" produces="intro-animation-up">
+			  <ul class="nav nav-tabs" role="tablist" id="myTabs">
+			    <li role="presentation" class="active col-xs-3 text-center">
+			    	<a href="#entrees" aria-controls="entrees" role="tab" data-toggle="tab" onfocus="this.blur();" class="btn btn-raised">Entrées</a>
+			    </li>
+			    <li role="presentation" class="col-xs-3 text-center">
+			    	<a href="#salads" aria-controls="salads" role="tab" data-toggle="tab" onfocus="this.blur();" class="btn btn-raised">Salads</a>
+			    </li>
+			    <li role="presentation" class="col-xs-3 text-center">
+			    	<a href="#appetizers" aria-controls="appetizers" role="tab" data-toggle="tab" onfocus="this.blur();" class="btn btn-raised">Appetizers</a>
+			    </li>
+			    <li role="presentation" class="col-xs-3 text-center">
+			    	<a href="#desserts" aria-controls="desserts" role="tab" data-toggle="tab" onfocus="this.blur();" class="btn btn-raised">Desserts</a>
+			    </li>
+			  </ul>
+			  <div class="tab-content">
+			    <div role="tabpanel" class="tab-pane fade in active" id="entrees">
+			    	<div class="row">
+			    		<div class="col-md-4 col-xs-6">
+			    			<div class="well">
+			    				<div class="text-center">
+			    					<h3>Item Title</h3>
+			    					<p><b>Price: $8.99</b></p>
+			    					<p>A brief description of what the item is and ingredients it contains. This will help convey all of the differnet items that are on our menu</p>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="col-md-4 col-xs-6">
+			    			<div class="well">
+			    				<div class="text-center">
+			    					<h3>Item Title</h3>
+			    					<p><b>Price: $8.99</b></p>
+			    					<p>A brief description of what the item is and ingredients it contains. This will help convey all of the differnet items that are on our menu</p>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="col-md-4 col-xs-6">
+			    			<div class="well">
+			    				<div class="text-center">
+			    					<h3>Item Title</h3>
+			    					<p><b>Price: $8.99</b></p>
+			    					<p>A brief description of what the item is and ingredients it contains. This will help convey all of the differnet items that are on our menu</p>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="col-md-4 col-xs-6">
+			    			<div class="well">
+			    				<div class="text-center">
+			    					<h3>Item Title</h3>
+			    					<p><b>Price: $8.99</b></p>
+			    					<p>A brief description of what the item is and ingredients it contains. This will help convey all of the differnet items that are on our menu</p>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="col-md-4 col-xs-6">
+			    			<div class="well">
+			    				<div class="text-center">
+			    					<h3>Item Title</h3>
+			    					<p><b>Price: $8.99</b></p>
+			    					<p>A brief description of what the item is and ingredients it contains. This will help convey all of the differnet items that are on our menu</p>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="col-md-4 col-xs-6">
+			    			<div class="well">
+			    				<div class="text-center">
+			    					<h3>Item Title</h3>
+			    					<p><b>Price: $8.99</b></p>
+			    					<p>A brief description of what the item is and ingredients it contains. This will help convey all of the differnet items that are on our menu</p>
+			    				</div>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>
+			    <div role="tabpanel" class="tab-pane fade" id="salads"><div class="row">
+			    		<div class="col-md-4 col-xs-6">
+			    			<div class="well">
+			    				<div class="text-center">
+			    					<h3>Item Title</h3>
+			    					<p><b>Price: $8.99</b></p>
+			    					<p>A brief description of what the item is and ingredients it contains. This will help convey all of the differnet items that are on our menu</p>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="col-md-4 col-xs-6">
+			    			<div class="well">
+			    				<div class="text-center">
+			    					<h3>Item Title</h3>
+			    					<p><b>Price: $8.99</b></p>
+			    					<p>A brief description of what the item is and ingredients it contains. This will help convey all of the differnet items that are on our menu</p>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="col-md-4 col-xs-6">
+			    			<div class="well">
+			    				<div class="text-center">
+			    					<h3>Item Title</h3>
+			    					<p><b>Price: $8.99</b></p>
+			    					<p>A brief description of what the item is and ingredients it contains. This will help convey all of the differnet items that are on our menu</p>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="col-md-4 col-xs-6">
+			    			<div class="well">
+			    				<div class="text-center">
+			    					<h3>Item Title</h3>
+			    					<p><b>Price: $8.99</b></p>
+			    					<p>A brief description of what the item is and ingredients it contains. This will help convey all of the differnet items that are on our menu</p>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="col-md-4 col-xs-6">
+			    			<div class="well">
+			    				<div class="text-center">
+			    					<h3>Item Title</h3>
+			    					<p><b>Price: $8.99</b></p>
+			    					<p>A brief description of what the item is and ingredients it contains. This will help convey all of the differnet items that are on our menu</p>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="col-md-4 col-xs-6">
+			    			<div class="well">
+			    				<div class="text-center">
+			    					<h3>Item Title</h3>
+			    					<p><b>Price: $8.99</b></p>
+			    					<p>A brief description of what the item is and ingredients it contains. This will help convey all of the differnet items that are on our menu</p>
+			    				</div>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>
+			    <div role="tabpanel" class="tab-pane fade" id="appetizers">
+			    	<div class="row">
+			    		<div class="col-md-4 col-xs-6">
+			    			<div class="well">
+			    				<div class="text-center">
+			    					<h3>Item Title</h3>
+			    					<p><b>Price: $8.99</b></p>
+			    					<p>A brief description of what the item is and ingredients it contains. This will help convey all of the differnet items that are on our menu</p>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="col-md-4 col-xs-6">
+			    			<div class="well">
+			    				<div class="text-center">
+			    					<h3>Item Title</h3>
+			    					<p><b>Price: $8.99</b></p>
+			    					<p>A brief description of what the item is and ingredients it contains. This will help convey all of the differnet items that are on our menu</p>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="col-md-4 col-xs-6">
+			    			<div class="well">
+			    				<div class="text-center">
+			    					<h3>Item Title</h3>
+			    					<p><b>Price: $8.99</b></p>
+			    					<p>A brief description of what the item is and ingredients it contains. This will help convey all of the differnet items that are on our menu</p>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="col-md-4 col-xs-6">
+			    			<div class="well">
+			    				<div class="text-center">
+			    					<h3>Item Title</h3>
+			    					<p><b>Price: $8.99</b></p>
+			    					<p>A brief description of what the item is and ingredients it contains. This will help convey all of the differnet items that are on our menu</p>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="col-md-4 col-xs-6">
+			    			<div class="well">
+			    				<div class="text-center">
+			    					<h3>Item Title</h3>
+			    					<p><b>Price: $8.99</b></p>
+			    					<p>A brief description of what the item is and ingredients it contains. This will help convey all of the differnet items that are on our menu</p>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="col-md-4 col-xs-6">
+			    			<div class="well">
+			    				<div class="text-center">
+			    					<h3>Item Title</h3>
+			    					<p><b>Price: $8.99</b></p>
+			    					<p>A brief description of what the item is and ingredients it contains. This will help convey all of the differnet items that are on our menu</p>
+			    				</div>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>
+			    <div role="tabpanel" class="tab-pane fade" id="desserts">
+			    	<div class="row">
+			    		<div class="col-md-4 col-xs-6">
+			    			<div class="well">
+			    				<div class="text-center">
+			    					<h3>Item Title</h3>
+			    					<p><b>Price: $8.99</b></p>
+			    					<p>A brief description of what the item is and ingredients it contains. This will help convey all of the differnet items that are on our menu</p>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="col-md-4 col-xs-6">
+			    			<div class="well">
+			    				<div class="text-center">
+			    					<h3>Item Title</h3>
+			    					<p><b>Price: $8.99</b></p>
+			    					<p>A brief description of what the item is and ingredients it contains. This will help convey all of the differnet items that are on our menu</p>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="col-md-4 col-xs-6">
+			    			<div class="well">
+			    				<div class="text-center">
+			    					<h3>Item Title</h3>
+			    					<p><b>Price: $8.99</b></p>
+			    					<p>A brief description of what the item is and ingredients it contains. This will help convey all of the differnet items that are on our menu</p>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="col-md-4 col-xs-6">
+			    			<div class="well">
+			    				<div class="text-center">
+			    					<h3>Item Title</h3>
+			    					<p><b>Price: $8.99</b></p>
+			    					<p>A brief description of what the item is and ingredients it contains. This will help convey all of the differnet items that are on our menu</p>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="col-md-4 col-xs-6">
+			    			<div class="well">
+			    				<div class="text-center">
+			    					<h3>Item Title</h3>
+			    					<p><b>Price: $8.99</b></p>
+			    					<p>A brief description of what the item is and ingredients it contains. This will help convey all of the differnet items that are on our menu</p>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="col-md-4 col-xs-6">
+			    			<div class="well">
+			    				<div class="text-center">
+			    					<h3>Item Title</h3>
+			    					<p><b>Price: $8.99</b></p>
+			    					<p>A brief description of what the item is and ingredients it contains. This will help convey all of the differnet items that are on our menu</p>
+			    				</div>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>
+			  </div>
 			</div>
 		</div>
 	</div>
 </div>
 
 <footer>
-  <h1>Hi, I'm a Fixed-Footer!</h1>
+	<h1>Hi There! I'm a fixed footer</h1>
 </footer>
-
 	
-
-
-<!--
-	<div class="header container move-down">
-		<div class="row">
-			<div class="col-md-3">
-				<div class="well menu-card">				
-					<h1>Rice Sandwich</h1>
-					<p>A sandwich made with all your favorite sandwich toppings served on rice cakes.</p>
-					<div ><p class="price"><b>Price<b> $3.99</p></div>		
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="well menu-card">				
-					<h1>Pizza</h1>
-					<p>Build a pizza with all of your favorite topping served completely gluten free.</p>
-					<div ><p class="price"><b>Price<b> $5.99</p></div>						
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="well menu-card">				
-					<h1>Tacos</h1>
-					<p>Build your own taco to accommodate your taste and presences.</p>
-					<div ><p class="price"><b>Price<b> $4.99</p></div>					
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="well menu-card">				
-					<h1>spaghetti</h1>
-					<p>Your favorite Italian food served gluten free.</p>
-					<div ><p class="price"><b>Price<b> $7.99</p></div>					
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-3">
-				<div class="well menu-card">				
-					<h1>Title</h1>
-					<p>Description of item</p>
-					<p>Price</p>				
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="well menu-card">				
-					<h1>Title</h1>
-					<p>Description of item</p>
-					<p>Price</p>				
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="well menu-card">				
-					<h1>Title</h1>
-					<p>Description of item</p>
-					<p>Price</p>				
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="well menu-card">				
-					<h1>Title</h1>
-					<p>Description of item</p>
-					<p>Price</p>				
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
--->
-
 <!-- jQuery -->
-<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.min.js"></script> 
 
 <!-- Bootstrap Core JavaScript -->
 <script src="../js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+	$('#myTabs a').click(function (e) {
+	  e.preventDefault()
+	  $(this).tab('show')
+	})
+</script>
 
 <!-- Javascript files for the material design elements -->
 <script src="../js/material.min.js"></script>
