@@ -6,40 +6,4 @@ body {
 	position: relative;
 }
 
-.active a div {
-	background-color: #E65100;
-}
 
-.header-img {
-	height: 200px;
-	background: url("../../img/about.jpg") no-repeat; 
-}
-
-
-.side-nav {
-	position: fixed;
-	top: 50%;
-	left: 95%;
-	transform: translate(-50%, -50%);
-}
-
-.side-nav ul {
-	list-style: none;
-}
-
-.side-nav ul li a:hover {
-	background-color: transparent;
-}
-
-.side-nav ul li a {
-	padding: 0;
-}
-
-.circle-btn {
-	width: 20px;
-	height: 20px;
-	border-radius: 20px;
-	background-color: transparent;
-	border: 1px solid #E65100;
-	margin: 10px;
-}	
