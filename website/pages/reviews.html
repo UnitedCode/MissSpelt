@@ -49,7 +49,7 @@
 <div class="main">
 	<div class="bs-component">
 		<div class="navbar navbar-default navbar-fixed-top">
-		  <div class="nav-container">
+			<div class="nav-container">
 				<div class="navbar-header">
 				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-warning-collapse">
 						<span class="icon-bar"></span>
@@ -62,30 +62,25 @@
 				  <ul class="nav navbar-nav">
 						<li><a href="javascript:delay('../index.html')" onfocus="this.blur();">Home</a></li>
 						<li><a href="javascript:delay('menu.html')" onfocus="this.blur();">Menu</a></li>
-						<li><a href="javascript:delay('reservations.html')" onfocus="this.blur();" class="active-tab">Reservations</a></li>
+						<li><a href="javascript:delay('reservations.html')" onfocus="this.blur();">Reservations</a></li>
+						<li><a href="javascript:delay('reviews.html')" onfocus="this.blur();"  class="active-tab">Reviews</a></li>
 				  </ul>
 				  <ul class="nav navbar-nav navbar-right">
 					<li><a href="javascript:delay('contact.html')" onfocus="this.blur();">Contact</a></li>
 					<li><a href="javascript:delay('about.html')" onfocus="this.blur();">About</a></li>
-
 				  </ul>
 				</div>
-		  </div>
+			</div>
 		</div>
 	</div>
 
-
-
-
-
-<div class="header container move-down">
+	<div class="header container move-down">
 		<div class="container2 header-element fly-in" produces="intro-animation-up">
 			<div class="jumbotron">
 				<div class="text-center">
 					<h1>Reviews</h1>		
 				</div>
 			</div>
-
 			<div class="row">
 				<div class="col-md-3">
 					<div class="well menu-card">				
@@ -116,23 +111,15 @@
 					</div>
 				</div>
 			</div>
-
 			<div class="jumbotron jumbo-fix">
 				<div class="text-center">
 					<h1>Write a review!</h1>			
 					<a href="#" class="btn btn-raised btn-warning" data-toggle="modal" data-target="#reviewModal">Click Here</a>
 				</div>
 			</div>
-				</div>
-			</div>
 		</div>
 	</div>
 </div>
-
-
-
-
-
 
 <div class="modal" id="reviewModal">
   <div class="modal-dialog">
@@ -142,61 +129,53 @@
         <h4 class="modal-title">Modal title</h4>
       </div>
       <div class="modal-body">
-        	<div class="">
-		<div class="form-card"id="chicagoModal">
-			<h2 class="text-center">Create a review</h2>
-			
-			<form>
-				<fieldset>
-		  <div class="form-group">
-				<h2 class="form-item-title">First Name</h2>
-				<div class="col-md-8">
-				  <input type="text" class="form-control" id="firstName" placeholder="Enter text here">
+				<div class="form-card">
+					<h2 class="text-center">Create a review</h2>
+					<form>
+						<fieldset>
+						  <div class="form-group">
+								<h2 class="form-item-title">First Name</h2>
+								<div class="col-md-8">
+								  <input type="text" class="form-control" id="firstName" placeholder="Enter text here">
+								</div>
+						  </div>
+						  <div class="form-group">
+								<h2 class="form-item-title">Last Name</h2>
+								<div class="col-md-8">
+								  <input type="text" class="form-control" id="lastName" placeholder="Enter text here">
+								</div>
+						  </div> 
+						  <div class="form-group">
+						  	<h2 class="form-item-title">Rating</h2>
+									<div class="col-md-8">				      
+								    <fieldset>
+									    <span class="star-cb-group">
+									      <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
+									      <input type="radio" id="rating-4" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
+									      <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
+									      <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
+									      <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
+									      <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label for="rating-0">0</label>
+									    </span>
+									  </fieldset>
+								</div>
+						  </div>  
+						  <div class="form-group">
+								<h2 class="form-item-title">Write your review here.</h2>
+								<div class="col-md-8">
+								  <textarea type="text" class="form-control" id="lastName" placeholder="Enter text here"></textarea>
+								</div>
+						  </div>   
+						  <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        <button type="submit" class="btn btn-raised btn-warning">Submit</button>
+				      </div>
+				  	</fieldset>
+					</form>
 				</div>
-		  </div>
-
-		  <div class="form-group">
-				<h2 class="form-item-title">Last Name</h2>
-				<div class="col-md-8">
-				  <input type="text" class="form-control" id="lastName" placeholder="Enter text here">
-				</div>
-		  </div> 
-		  <div class="form-group">
-		  	<h2 class="form-item-title">Rating</h2>
-					<div class="col-md-8">				      
-				     <fieldset>
-					    <span class="star-cb-group">
-					      <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
-					      <input type="radio" id="rating-4" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
-					      <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
-					      <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
-					      <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
-					      <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label for="rating-0">0</label>
-					    </span>
-					  </fieldset>
-				</div>
-		  </div>  
-
-		  <div class="form-group">
-				<h2 class="form-item-title">Write your review here.</h2>
-				<div class="col-md-8">
-				  <textarea type="text" class="form-control" id="lastName" placeholder="Enter text here"></textarea>
-				</div>
-		  </div>   
-
-		  <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-raised btn-warning">Submit</button>
-      </div>
-
-		  </fieldset>
-			</form>
-		</div>
-	</div>
       </div>
     </div>
   </div>
-</div>
 </div>
 
 <footer>
@@ -217,8 +196,6 @@
 <script src="../js/material.min.js"></script>
 <script src="../js/script.js"></script>
 <script src="../js/ripples.min.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
-
 
 </body>
 
