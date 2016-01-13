@@ -109,4 +109,19 @@ body, html {
   .panel-img {
     height: 200px;
   }
+
+  #section-1 {
+    height: auto;
+  }
+}
+
+@media (max-width: 970px) {
+  .logo img {
+    width: 300px;
+  }
+
+  .logo h2 {
+    width: 300px;
+    font-size: 19px;
+  }
 }

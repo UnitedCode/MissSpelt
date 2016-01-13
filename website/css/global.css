@@ -228,3 +228,29 @@ footer > .row {
 #twitter a:hover > i {
 	color: #55ACEE;
 }
+
+@media (max-width: 970px) {
+	footer > .row {
+		bottom: 100px;
+	}
+
+	.copyright p {
+		font-size: 1.1em;
+	}
+
+	.f-logo img {
+		width: 200px;
+	}
+
+	.social-btns > ul > li > a > i.fa-5x {
+		font-size: 3em;
+	}
+
+	.social-btns > ul > li > a > span.fa-3x {
+		font-size: 2em;
+	}
+
+	#googleplus {
+		top: -10px;
+	}
+}
