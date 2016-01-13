@@ -140,6 +140,11 @@ footer > .row {
 	position: relative;
 }
 
+.main-alt {
+	z-index: 10;
+	position: relative;
+}
+
 .move-down {
 	padding-top: 50px;
 }
@@ -165,6 +170,8 @@ footer > .row {
 	-moz-box-shadow:0 8px 8px rgba(0, 0, 0, 0.8);
 	-webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.8);
 	box-shadow: 0 8px 8px rgba(0, 0, 0, 0.8);
+	z-index: 10;
+	position: relative;
 }
 
 .topnav, .navbar, .navbar.navbar-default {
