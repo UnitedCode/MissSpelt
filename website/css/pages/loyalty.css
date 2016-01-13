@@ -1,0 +1,162 @@
+body, html {
+  width: 100%;
+  height: 100%;
+
+ }
+
+.form-card {
+  position: relative;
+  top: -55px;
+}
+
+.form-group.is-focused .form-control .material-input:after {
+  background-color: #E65100;
+}
+
+.form-group.is-focused label,
+.form-group.is-focused label.control-label,
+.form-group.is-focused.label-placeholder label,
+.form-group.is-focused.label-placeholder label.control-label {
+  color: #E65100;
+}
+
+.form-group.is-focused .form-control {
+  outline: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E65100), to(#E65100)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+  background-image: -webkit-linear-gradient(#E65100, #E65100), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+  background-image: -o-linear-gradient(#E65100, #E65100), -o-linear-gradient(#D2D2D2, #D2D2D2);
+  background-image: linear-gradient(#E65100, #E65100), linear-gradient(#D2D2D2, #D2D2D2);
+}
+
+/*These styles chang the checkboxes color*/
+
+.checkbox input[type="checkbox"]:checked + .checkbox-material .check {
+  color: #E65100;
+  border-color: #E65100;
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox-material .check::before {
+  color: #E65100;
+}
+
+/*These styles chang the radio buttons color*/
+
+
+.form-group {
+  clear: both;
+}
+
+.form-item-title {
+  font-size:20px;
+  clear: both;
+  margin-left: 14px;
+  padding-top: 15px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.submit-button {
+  margin-top: 70px;
+}
+
+.star-cb-group {
+  /* remove inline-block whitespace */
+  font-size: 0;
+  /* flip the order so we can use the + and ~ combinators */
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  /* the hidden clearer */
+}
+.star-cb-group * {
+  font-size: 1rem;
+}
+.star-cb-group > input {
+  display: none;
+}
+.star-cb-group > input + label {
+  /* only enough room for the star */
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 9999px;
+  width: 1em;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 50px;
+}
+.star-cb-group > input + label:before {
+  display: inline-block;
+  text-indent: -9999px;
+  content: "☆";
+  color: #888;
+}
+.star-cb-group > input:checked ~ label:before, .star-cb-group > input + label:hover ~ label:before, .star-cb-group > input + label:hover:before {
+  content: "★";
+  color: #e52;
+  text-shadow: 0 0 1px #333;
+}
+.star-cb-group > .star-cb-clear + label {
+  text-indent: -9999px;
+  width: .5em;
+  margin-left: -.5em;
+}
+.star-cb-group > .star-cb-clear + label:before {
+  width: .5em;
+}
+.star-cb-group:hover > input + label:before {
+  content: "☆";
+  color: #888;
+  text-shadow: none;
+}
+.star-cb-group:hover > input + label:hover ~ label:before, .star-cb-group:hover > input + label:hover:before {
+  content: "★";
+  color: #e52;
+  text-shadow: 0 0 1px #333;
+}
+
+.main {
+  height: 100%
+}
+
+#party-fix {
+  margin-left:0; 
+  margin-top:0;
+}
+
+ .container2 {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+ .header {
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  width: 100%;
+
+}
+
+ .jumbotron{
+  margin-top: 50px;
+  margin-bottom: 10px;
+  padding: 2px;
+
+ }
+ .jumbo-fix{
+  margin-top: 20px;
+ }
+
+.menu-card {
+  margin-top: 20px;
+  height: 300px;
+}
+
+.menu-card h1 {
+  text-align: center;
+  font-size: 30px;
+}
+.menu-card p {
+  text-align: center;
+  font-size: 25px;
+}
