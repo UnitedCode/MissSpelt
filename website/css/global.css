@@ -254,3 +254,17 @@ footer > .row {
 		top: -10px;
 	}
 }
+
+@media (max-width: 765px) {
+	footer > .row {
+		bottom: 49px;
+	}
+
+	.copyright p {
+		margin: 0;
+	}
+
+	.f-logo img {
+		margin-top: 21px;
+	}
+}
