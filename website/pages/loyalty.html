@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta property="og:image" content="http://i.imgur.com/JYD5bDa.jpg">
+
+	<title>MissSpelt! | Reviews</title>
+
+	<!--Favicon-->
+	<link rel='shortcut icon' href='../favicon.ico' type='image/x-icon'>
+
+	<!-- Material Design fonts -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Bootstrap Core CSS -->
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- CSS Scripts for material design -->
+	<link href="../css/bootstrap-material-design.min.css" rel="stylesheet">
+	<link href="../css/ripples.min.css" rel="stylesheet">
+
+	<!-- Custom Sitewide Styles -->
+	<link href="../css/global.css" rel="stylesheet">
+
+	<!-- Custom page specific styles -->
+	<link href="../css/pages/loyalty.css" rel="stylesheet">
+
+	<!-- Custom Fonts -->
+	<link href="../fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+<div class="main">
+	<div class="bs-component">
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="nav-container">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-warning-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="javascript:delay('../index.html')" onfocus="this.blur();"><img src="../img/logo-2.png"></a>
+				</div>
+				<div class="navbar-collapse collapse navbar-warning-collapse">
+				  <ul class="nav navbar-nav">
+						<li><a href="javascript:delay('../index.html')" onfocus="this.blur();">Home</a></li>
+						<li><a href="javascript:delay('menu.html')" onfocus="this.blur();">Menu</a></li>
+						<li><a href="javascript:delay('reservations.html')" onfocus="this.blur();">Reservations</a></li>
+						<li><a href="javascript:delay('reviews.html')" onfocus="this.blur();">Reviews</a></li>
+				  </ul>
+				  <ul class="nav navbar-nav navbar-right">
+					<li><a href="javascript:delay('contact.html')" onfocus="this.blur();">Contact</a></li>
+					<li><a href="javascript:delay('about.html')" onfocus="this.blur();">About</a></li>
+				  </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="header container move-down">
+		<div class="container2 header-element fly-in" produces="intro-animation-up">
+			<div class="jumbotron">
+				<div class="text-center">
+					<h1>Loyalty Program</h1>		
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="well menu-card">				
+						<h1>Refer a friend</h1>
+						<p>After signing up if you bring a friend then your meal is half off!</p>	
+					</div>
+				</div>				
+				<div class="col-md-6">
+					<div class="well menu-card">				
+						<h1>Request a card</h1>	
+						<p>Request a food card at one of our many stores and begin earning credit for each meal, after spending $40 then get $10 off of your next bill!</p>	
+					</div>
+				</div>	
+			</div>
+			<div class="well">
+				<div class="text-center">
+					<h1>Sign Up!</h1>			
+					<a href="#" class="btn btn-raised btn-warning" data-toggle="modal" data-target="#reviewModal">Click Here</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="reviewModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+       
+      </div>
+      <div class="modal-body">
+				<div class="form-card">
+					<h2 class="text-center">Sign up</h2>
+					<form>
+						<fieldset>
+						  <div class="form-group">
+								<h2 class="form-item-title">First Name</h2>
+								<div class="col-md-8">
+								  <input type="text" class="form-control" id="firstName" placeholder="Enter first name here">
+								</div>
+						  </div>
+						  <div class="form-group">
+								<h2 class="form-item-title">Last Name</h2>
+								<div class="col-md-8">
+								  <input type="text" class="form-control" id="lastName" placeholder="Enter last name here">
+								</div>
+						  </div> 
+						  <div class="form-group">
+								<h2 class="form-item-title">Email</h2>
+								<div class="col-md-8">
+								  <input type="text" class="form-control" id="Email" placeholder="Enter email here">
+								</div>
+						  </div> 
+						  
+
+ 
+
+						  <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        <button type="submit" class="btn btn-raised btn-warning">Submit</button>
+				      </div>
+				  	</fieldset>
+					</form>
+				</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <h1>Hi, I'm a Fixed-Footer!</h1>
+</footer>
+
+<!-- jQuery -->
+<script src="../js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Custom scripts for this page -->
+<script src="../js/pages/reviews.js"></script>
+<script src="../js/pages/grabReviews.js"></script>
+
+<!-- Javascript files for the material design elements -->
+<script src="../js/material.min.js"></script>
+<script src="../js/script.js"></script>
+<script src="../js/ripples.min.js"></script>
+
+</body>
+
+</html>
