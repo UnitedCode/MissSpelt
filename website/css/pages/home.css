@@ -125,3 +125,14 @@ body, html {
     font-size: 19px;
   }
 }
+
+@media (max-width: 695px) {
+  .logo img {
+    top: 72px;
+  }
+
+  .logo h2 {
+    top: 62px;
+  }
+}
+}
