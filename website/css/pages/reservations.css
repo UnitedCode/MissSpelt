@@ -32,4 +32,32 @@
 	margin-bottom: 25px;
 }
 
+@media (max-width: 970px) {
+	.main {
+		height: auto;
+	}
 
+	#reserve-jumbo {
+    margin-top: 60px;
+	}
+}
+
+@media (max-width: 450px) {
+	#reserve-jumbe h1 {
+		font-size: 30px;
+	}
+
+	#reserve-jumbo {
+    margin-top: 60px;
+	}
+
+	.jumbotron p {
+		font-size: 17px;
+	}
+
+	.main {
+		height: auto;
+	}
+
+
+}

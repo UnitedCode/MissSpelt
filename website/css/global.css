@@ -70,24 +70,9 @@ footer > .row {
 	font-size: 1.4em;
 }
 
-.social-btns ul {
-	list-style-type: none;
-	margin:0;
-	padding: 0;
-}
-
-.social-btns ul li {
-	display: inline-block;s
-}
-
-.social-btns {
-	position: relative;
-	top: 42px;
-}
-
 .container {
-	padding-right: 150px;
-	padding-left: 150px;
+	padding-right: 5%;
+	padding-left: 5%;
 }
 
 .f-logo img {
@@ -178,6 +163,21 @@ footer > .row {
 	box-shadow: 0 8px 8px rgba(0, 0, 0, 0.8);
 	z-index: 10;
 	position: relative;
+}
+
+.social-btns ul {
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+}
+
+.social-btns ul li {
+	display: inline-block;s
+}
+
+.social-btns {
+	position: relative;
+	top: 42px;
 }
 
 .topnav, .navbar, .navbar.navbar-default {

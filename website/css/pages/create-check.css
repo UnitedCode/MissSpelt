@@ -89,3 +89,9 @@
 #date-fix {
 	margin-left: 0px;
 }
+
+@media (max-width: 450px) {
+	.c-main {
+		height: auto;
+	}
+}
