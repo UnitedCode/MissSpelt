@@ -1,10 +1,10 @@
 body, html {
- 	width: 100%;
+  width: 100%;
  }
 
 .form-card {
-	position: relative;
-	top: -55px;
+  position: relative;
+  top: -55px;
 }
 
 .form-group.is-focused .form-control .material-input:after {
@@ -29,28 +29,34 @@ body, html {
 /*These styles chang the checkboxes color*/
 
 .checkbox input[type="checkbox"]:checked + .checkbox-material .check {
-	color: #E65100;
-	border-color: #E65100;
+  color: #E65100;
+  border-color: #E65100;
 }
 
 .checkbox input[type="checkbox"]:checked + .checkbox-material .check::before {
-	color: #E65100;
+  color: #E65100;
 }
 
 /*These styles chang the radio buttons color*/
 
 
 .form-group {
-	clear: both;
+  clear: both;
 }
 
 .form-item-title {
-	font-size:20px;
-	clear: both;
-	margin-left: 14px;
-	padding-top: 15px;
-	padding-bottom: 0;
-	margin-bottom: 0;
+  font-size:20px;
+  clear: both;
+  margin-left: 14px;
+  padding-top: 15px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.rating{
+  text-align: center;
+  font-size: 30px;
+  color: #e52;
+  text-shadow: 0 0 1px #333;
 }
 .rating{
   text-align: center;
@@ -60,7 +66,7 @@ body, html {
 }
 
 .submit-button {
-	margin-top: 70px;
+  margin-top: 70px;
 }
 
 .star-cb-group {
@@ -118,12 +124,12 @@ body, html {
 }
 
 .main {
-	height: 100%
+  height: 100%
 }
 
 #party-fix {
-	margin-left:0; 
-	margin-top:0;
+  margin-left:0; 
+  margin-top:0;
 }
 
  .container2 {
