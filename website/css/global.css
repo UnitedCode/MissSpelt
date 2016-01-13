@@ -229,7 +229,7 @@ footer > .row {
 	color: #55ACEE;
 }
 
-@media (max-width: 970px) {
+@media (max-width: 1000px) {
 	footer > .row {
 		bottom: 100px;
 	}
@@ -255,7 +255,7 @@ footer > .row {
 	}
 }
 
-@media (max-width: 765px) {
+@media (max-width: 960px) {
 	footer > .row {
 		bottom: 49px;
 	}

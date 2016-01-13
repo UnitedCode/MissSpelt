@@ -49,4 +49,48 @@
 
 }
 
+@media (max-width: 970px) {
+	h1 {
+		font-size: 30px !important;
+	}
 
+	h2 {
+    font-size: 25px;
+	}	
+
+	.jumbotron p {
+		font-size: 17px;
+	}
+}
+
+@media (max-width: 450px) {
+	h1 {
+		font-size: 30px;
+	}
+
+	h2 {
+    font-size: 25px;
+	}	
+
+	.jumbotron p {
+		font-size: 15px;
+	}
+
+	.contact img {
+    width: 255px;
+  }
+
+  .g-map iframe {
+    width: 300px;
+	}
+
+	.modal-dialog {
+    width: auto;
+	}
+}
+
+@media (max-height: 430px) {
+	.g-map iframe {
+    height: 245px;
+	}
+}

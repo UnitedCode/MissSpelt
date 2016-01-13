@@ -13,3 +13,14 @@ body {
 .well p {
 	font-size: 17px;
 }
+
+@media (max-width: 450px) {
+	.well p {
+    font-size: 14px;
+	}
+
+	.y-video > iframe {
+    width: 280px;
+    height: 180px;
+	}
+}
