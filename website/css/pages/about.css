@@ -9,3 +9,7 @@ body {
 .main {
 	background-color: #FFFFFF;
 }
+
+.well p {
+	font-size: 17px;
+}

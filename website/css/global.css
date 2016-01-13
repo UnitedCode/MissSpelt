@@ -48,6 +48,12 @@ footer > .row {
 	bottom: 66px;
 }
 
+.action-box {
+	width: 300px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 .btn.btn-raised.btn-warning {
 	background-color: #E65100;

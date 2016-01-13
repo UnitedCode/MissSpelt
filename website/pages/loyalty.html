@@ -3,13 +3,36 @@
 
 <head>
 
+	<!--Favicons-->
+	<link rel="apple-touch-icon" sizes="57x57" href="../apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+	<link rel="manifest" href="../manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="../ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<link rel='shortcut icon' href='../favicon.ico' type='image/x-icon'/ >
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	
-	<meta name="description" content="">
+	<meta name="description" content="Delicious, Healthy...Gluten-free">
 	<meta name="author" content="">
-
+	
+	<meta property="og:title" content="MissSpelt!" />
 	<meta property="og:image" content="http://i.imgur.com/JYD5bDa.jpg">
+	<meta property="og:url" content="missspelt.co/pages/loyalty.html" />
+	<meta property="og:description" content="Delicious, Healthy...Gluten-free" />
 
 	<title>MissSpelt! | Loyalty Program</title>
 
@@ -34,7 +57,7 @@
 	<link href="../css/pages/loyalty.css" rel="stylesheet">
 
 	<!-- Custom Fonts -->
-	<link href="../fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -48,7 +71,7 @@
 
 <body>
 
-<div class="main f-main">
+<div class="main">
 	<div class="bs-component">
 		<div class="navbar navbar-default navbar-fixed-top">
 			<div class="nav-container">
@@ -76,11 +99,13 @@
 		</div>
 	</div>
 
-	<div class="header container move-down">
-		<div class="container2 header-element fly-in" produces="intro-animation-up">
+
+	<div class="header-color"></div>
+		<div class="container header-element fly-in" produces="intro-animation-up">
 			<div class="jumbotron">
 				<div class="text-center">
-					<h1>Loyalty Programs</h1>		
+					<h1>Loyalty Programs</h1>
+					<p>Interested in recieving discounts on your purchases from MissSpelt!? Read below to find out what customer loyalty programs we offer.</p>
 				</div>
 			</div>
 			<div class="row">
@@ -97,17 +122,16 @@
 					</div>
 				</div>	
 			</div>
-			<div class="well">
+			<div class="well action-box">
 				<div class="text-center">
 					<h1>Sign Up!</h1>			
 					<a href="#" class="btn btn-raised btn-warning" data-toggle="modal" data-target="#reviewModal">Click Here</a>
 				</div>
 			</div>
 		</div>
-	</div>
 </div>
 
-<div class="modal" id="reviewModal">
+<div class="modal fade" id="reviewModal">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -137,9 +161,6 @@
 								  <input type="text" class="form-control" id="Email" placeholder="Enter email here">
 								</div>
 						  </div> 
-						  
-
- 
 
 						  <div class="modal-footer">
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -154,7 +175,37 @@
 </div>
 
 <footer>
-  <h1>Hi, I'm a Fixed-Footer!</h1>
+  <div class="row">
+  	<div class="col-md-4 copyright">
+  		<p>© Copyright 2016 MissSpelt!</p>
+  		<br>
+  		<p>Credits for technologies and images used<br>can be found <a href="credits.html">here</a></p>
+  	</div>
+  	<div class="col-md-4 f-logo">
+  		<img src="../img/logo.png">
+  	</div>
+  	<div class="col-md-4 social-btns">
+  		<ul>
+  			<li id="facebook">
+  				<a href="http://www.facebook.com/sharer.php?u=http://missspelt.co/pages/loyalty.html" target="_blank"><i class="fa fa-facebook fa-fw fa-5x"></i></a>
+  			</li>
+  			<li id="twitter">
+  				<a href="https://twitter.com/share?url=http://missspelt.co/pages/loyalty.html&amp;text=MissSpelt!%20Delicious,%20Helthy...Gluten-free&amp;hashtags=glutenfree" target="_blank"><i class="fa fa-twitter fa-fw fa-5x"></i></a>
+  			</li>
+  			<li id="googleplus">
+  				<a href="https://plus.google.com/share?url=http://missspelt.co/pages/loyalty.html" target="_blank">
+  					<span class="fa-stack fa-3x">
+						  <i class="fa fa-circle fa-stack-2x"></i>
+						  <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+						</span>
+  				</a>
+  			</li>
+  			<li id="reddit">
+  				<a href="http://reddit.com/submit?url=http://missspelt.co/pages/loyalty.html&amp;title=MissSpelt! Delcious, Healthy...Gluten-free" target="_blank"><i class="fa fa-reddit-alien fa-fw fa-5x"></i></a>
+  			</li>
+  		</ul>
+  	</div>
+  </div>
 </footer>
 
 <!-- jQuery -->

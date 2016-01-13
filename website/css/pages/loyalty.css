@@ -41,7 +41,6 @@ body, html {
 
 /*These styles chang the radio buttons color*/
 
-
 .form-group {
   clear: both;
 }
@@ -67,12 +66,15 @@ body, html {
   direction: rtl;
   /* the hidden clearer */
 }
+
 .star-cb-group * {
   font-size: 1rem;
 }
+
 .star-cb-group > input {
   display: none;
 }
+
 .star-cb-group > input + label {
   /* only enough room for the star */
   display: inline-block;
@@ -83,38 +85,40 @@ body, html {
   cursor: pointer;
   font-size: 50px;
 }
+
 .star-cb-group > input + label:before {
   display: inline-block;
   text-indent: -9999px;
   content: "☆";
   color: #888;
 }
+
 .star-cb-group > input:checked ~ label:before, .star-cb-group > input + label:hover ~ label:before, .star-cb-group > input + label:hover:before {
   content: "★";
   color: #e52;
   text-shadow: 0 0 1px #333;
 }
+
 .star-cb-group > .star-cb-clear + label {
   text-indent: -9999px;
   width: .5em;
   margin-left: -.5em;
 }
+
 .star-cb-group > .star-cb-clear + label:before {
   width: .5em;
 }
+
 .star-cb-group:hover > input + label:before {
   content: "☆";
   color: #888;
   text-shadow: none;
 }
+
 .star-cb-group:hover > input + label:hover ~ label:before, .star-cb-group:hover > input + label:hover:before {
   content: "★";
   color: #e52;
   text-shadow: 0 0 1px #333;
-}
-
-.main {
-  height: 100%
 }
 
 #party-fix {
@@ -122,12 +126,12 @@ body, html {
   margin-top:0;
 }
 
- .container2 {
+.container2 {
   padding-right: 5%;
   padding-left: 5%;
 }
 
- .header {
+.header {
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -137,15 +141,19 @@ body, html {
 
 }
 
- .jumbotron{
-  margin-top: 50px;
+.jumbotron{
   margin-bottom: 10px;
   padding: 2px;
 
- }
- .jumbo-fix{
+}
+
+.jumbo-fix{
   margin-top: 20px;
- }
+}
+
+.main {
+  background-color: #FFFFFF;
+}
 
 .menu-card {
   margin-top: 20px;
