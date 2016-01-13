@@ -89,3 +89,36 @@ body, html {
 .well {
   height: 200px;
 }
+
+@media (max-width: 360px) {
+  h3 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  .menu-box > .nav-tabs a {
+    font-size: 0.7em;
+  }
+
+  .menu-box {
+    padding-bottom: 10px; 
+  }
+
+  .main {
+    height: auto;
+  }
+
+  .well {
+    height: 211px;
+  }
+
+  #app-tab {
+    position: relative;
+    left: -3px;
+  }
+
+
+}

@@ -136,7 +136,7 @@ body, html {
   }
 }
 
-@media (max-width: 695px) {
+@media (max-width: 360px) {
   #section-1-panel {
     margin: 100px 8px 50px 8px;
   }
