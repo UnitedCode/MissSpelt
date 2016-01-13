@@ -95,3 +95,9 @@
 		height: auto;
 	}
 }
+
+@media (max-height: 700px) {
+  .c-main {
+    height: auto;
+  }
+}

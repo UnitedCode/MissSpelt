@@ -148,3 +148,8 @@ body, html {
   }
 }
 
+@media (max-height: 700px) {
+  #section-1 {
+    height: auto;
+  }
+}

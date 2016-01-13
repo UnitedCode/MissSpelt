@@ -144,3 +144,9 @@ body, html {
     height: 211px;
   }
 }
+
+@media (max-height: 700px) {
+  .main {
+    height: auto;
+  }
+}
