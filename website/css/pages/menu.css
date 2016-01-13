@@ -91,7 +91,34 @@ body, html {
   height: 200px;
 }
 
-@media (max-width: 408px) {
+@media (max-width: 970px) {
+  h3 {
+    font-size: 17px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .menu-box > .nav-tabs a {
+    font-size: 1.3em;
+  }
+
+  .menu-box {
+    margin-bottom: 10px; 
+    margin-top: 45px !important;
+  }
+
+  .main {
+    height: auto;
+  }
+
+  .well {
+    height: 211px;
+  }
+}
+
+@media (max-width: 450px) {
   h3 {
     font-size: 15px;
   }
@@ -116,11 +143,4 @@ body, html {
   .well {
     height: 211px;
   }
-
-  #app-tab {
-    position: relative;
-    left: -3px;
-  }
-
-
 }
