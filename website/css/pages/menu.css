@@ -18,7 +18,7 @@ body, html {
 }
 
 .header {
-	background: url("../../img/menu.jpg") no-repeat fixed center center ;
+	background: url("http://i.imgur.com/W3SpRri.jpg") no-repeat fixed center center ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -41,6 +41,7 @@ body, html {
 
 .main {
   height: 100%;
+  background-color: #FFFFFF
 }
 
 .menu-box > .nav-tabs {
@@ -83,4 +84,8 @@ body, html {
 
 .tab-pane > .row {
   margin-top: 20px;
+}
+
+.well {
+  height: 200px;
 }

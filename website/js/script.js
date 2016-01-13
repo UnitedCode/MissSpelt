@@ -5,11 +5,6 @@ $(window).ready(function() {
 	}, 800);
 });
 
-//turns on bootstraps tooltips
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-
 //Runs the parralax effect on the homepage
 $('#Parallax-content').mousemove(function(e) {
    var amountMovedX = (e.pageX * -0.3 / 6);
@@ -32,10 +27,6 @@ $('a[href*=#]:not([href=#])').click(function() {
     }
   }
 });
-
-
-
-
 
 //delays links in the navbar from opening to alloq time for the ripple animation to run
 function delay (URL) {
