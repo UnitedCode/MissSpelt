@@ -1,4 +1,5 @@
 body, html {
+  width: 100%;
   height: 100%;
 }
 
@@ -11,14 +12,9 @@ body, html {
   box-shadow: none !important;
 }
 
-.container2 {
+.container {
   padding-right: 5%;
   padding-left: 5%;
-}
-
-.container {
-    padding-right: 75px;
-    padding-left: 75px;
 }
 
 .header {
@@ -28,7 +24,7 @@ body, html {
   background-size: cover;
   -o-background-size: cover;
   width: 100%;
-  height: 100%;
+  height: 97.4%;
 
 }
 
@@ -41,6 +37,10 @@ body, html {
 
 .jumbo-fix {
  	margin-top: 20px;
+}
+
+.main {
+  height: 100%;
 }
 
 .menu-box > .nav-tabs {
@@ -80,10 +80,6 @@ body, html {
 .nav-tabs > li {
   padding: 0 !important;
 }
-
-.price {
-/*position: absolute; bottom: 0;*/
-  }
 
 .tab-pane > .row {
   margin-top: 20px;
