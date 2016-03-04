@@ -37,7 +37,7 @@ body, html {
 
 .h-header {
 	height:calc(100% - 6em);
-  background: url("https://i.imgur.com/UAMOjus.jpg") no-repeat fixed center center / cover transparent;
+  background: url("https://i.imgur.com/UAMOjus.jpg") no-repeat fixed center center / cover #FFFFFF;
   width:100%;
   background-size: 2000px;
   height: 90%;
@@ -145,6 +145,18 @@ body, html {
 
   .panel-body p {
     font-size: 1em;
+  }
+}
+
+@media (min-width: 1900px) {
+  .h-header {
+    background-size: 3000px;
+  }
+}
+
+@media (min-width: 2900px) {
+  .h-header {
+    background-size: 4000px;
   }
 }
 
