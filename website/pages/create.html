@@ -107,7 +107,7 @@
 	<div class="container fly-in" produces="intro-animation-up">
 		<div class="well form-card">
 			<h2 class="text-center">Create a Reservation</h2>
-			<form action="reserve.php" method="get">
+			<form action="reserve.php" method="POST">
 				<fieldset>
 
 				  <div class="form-group">
@@ -150,7 +150,7 @@
 
 				  <div class="form-group col-md-4">
 						<h2 class="form-item-title" id="party-fix">Number of Party Members</h2>
-						<input class="form-control" type="number" name="party_memebers">
+						<input class="form-control" type="number" name="party_members">
 				  </div>
 
 				  <div class="form-group">
@@ -175,6 +175,7 @@
 						<h2 class="form-item-title">Time</h2>
 						<div class="col-md-8">
 						  <select id="partyMembers" class="form-control" name="time">
+								<option value="none">Please select an approximate time</option>
 								<option value="am7">7:00 A.M.</option>
 								<option value="am8">8:00 A.M.</option>
 								<option value="am9">9:00 A.M.</option>

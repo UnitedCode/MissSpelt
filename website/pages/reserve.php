@@ -7,35 +7,62 @@
 
   $err_msg = "";
 
-  if (isset($_GET["firstname"]) && !empty($_GET["firstname"])) {
-    $first_name = $_GET["firstname"];
+  if (isset($_POST["firstname"]) && !empty($_POST["firstname"])) {
+    $first_name = $_POST["firstname"];
   } else {
     $err_msg = $err_msg."You did not enter a first name<br>";
   }
 
-  if (isset($_GET["lastname"]) && !empty($_GET["lastname"])) {
-    $last_name = $_GET["lastname"];
+  if (isset($_POST["lastname"]) && !empty($_POST["lastname"])) {
+    $last_name = $_POST["lastname"];
   } else {
     $err_msg = $err_msg."You did not enter a last name<br>";
   }
 
-  if (isset($_GET["contact"])){
-    if ($_GET["contact"] == "phone") {
-      if (isset($_GET["phone"]) && !empty($_GET["phone"])){
-        $phone = $_GET["phone"];
+  if (isset($_POST["contact"])){
+    if ($_POST["contact"] == "phone") {
+      if (isset($_POST["phone"]) && !empty($_POST["phone"])){
+        $contact_type = "phone";
+        $contact = $_POST["phone"];
       } else {
         $err_msg = $err_msg."You selected phone number but did not enter a phone number<br>";
       }
-    } else if ($_GET["contact"] == "email") {
-      if (isset($_GET["email"]) && !empty($_GET["email"])){
-        $email = $_GET["email"];
+    } else if ($_POST["contact"] == "email") {
+      if (isset($_POST["email"]) && !empty($_POST["email"])){
+        $contact_type = "email";
+        $contact = $_POST["email"];
       } else {
         $err_msg = $err_msg."You selected email but did not enter an email<br>";
       }
     }
   } else {
-    $err_msg = $err_msg."There was an unknown erroe with the contact section of the form<br>";
+    $err_msg = $err_msg."There was an unknown error with the contact section of the form<br>";
   }
+
+  if (isset($_POST["party_members"]) && !empty($_POST["party_members"])) {
+    $party_members = $_POST["party_members"];
+  } else {
+    $err_msg = $err_msg."You must enter the number of party members<br>";
+  }
+
+  if (isset($_POST["location"]) && $_POST["location"] != "none") {
+    $location = $_POST["location"];
+  } else {
+    $err_msg = $err_msg."You must choose a location<br>";
+  }
+
+  if (isset($_POST["date"]) && !empty($_POST["date"])) {
+    $date = $_POST["date"];
+  } else {
+    $err_msg = $err_msg."You must provide a date<br>";
+  }
+
+  if (isset($_POST["time"]) && $_POST["time"] != "none") {
+    $time = $_POST["time"];
+  } else {
+    $err_msg = $err_msg."You must choose a time<br>";
+  }
+
 
   ?>
 
@@ -146,6 +173,8 @@
         <?php
           if ($err_msg != "") {
             echo "Error";
+          } else {
+            echo "Thank You";
           }
        ?>
       </h2>
@@ -154,7 +183,13 @@
         if ($err_msg != "") {
           echo $err_msg;
         } else {
-          echo $first_name;
+          echo $first_name."<br>";
+          echo $last_name."<br>";
+          echo "$contact_type - $contact <br>";
+          echo $party_members."<br>";
+          echo $location."<br>";
+          echo $date."<br>";
+          echo $time."<br>";
         }
         ?>
       </p>
