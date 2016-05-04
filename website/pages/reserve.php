@@ -8,13 +8,13 @@
   $err_msg = "";
 
   if (isset($_POST["firstname"]) && !empty($_POST["firstname"])) {
-    $first_name = $_POST["firstname"];
+    $first_name = strval($_POST["firstname"]);
   } else {
     $err_msg = $err_msg."You did not enter a first name<br>";
   }
 
   if (isset($_POST["lastname"]) && !empty($_POST["lastname"])) {
-    $last_name = $_POST["lastname"];
+    $last_name = strval($_POST["lastname"]);
   } else {
     $err_msg = $err_msg."You did not enter a last name<br>";
   }
@@ -23,14 +23,15 @@
     if ($_POST["contact"] == "phone") {
       if (isset($_POST["phone"]) && !empty($_POST["phone"])){
         $contact_type = "phone";
-        $contact = $_POST["phone"];
+        $contact = strval($_POST["phone"]);
+        $contact = preg_replace("/[^0-9]/","",$contact);
       } else {
         $err_msg = $err_msg."You selected phone number but did not enter a phone number<br>";
       }
     } else if ($_POST["contact"] == "email") {
       if (isset($_POST["email"]) && !empty($_POST["email"])){
         $contact_type = "email";
-        $contact = $_POST["email"];
+        $contact = strval($_POST["email"]);
       } else {
         $err_msg = $err_msg."You selected email but did not enter an email<br>";
       }
@@ -40,25 +41,25 @@
   }
 
   if (isset($_POST["party_members"]) && !empty($_POST["party_members"])) {
-    $party_members = $_POST["party_members"];
+    $party_members = strval($_POST["party_members"]);
   } else {
     $err_msg = $err_msg."You must enter the number of party members<br>";
   }
 
   if (isset($_POST["location"]) && $_POST["location"] != "none") {
-    $location = $_POST["location"];
+    $location = strval($_POST["location"]);
   } else {
     $err_msg = $err_msg."You must choose a location<br>";
   }
 
   if (isset($_POST["date"]) && !empty($_POST["date"])) {
-    $date = $_POST["date"];
+    $date = strval($_POST["date"]);
   } else {
     $err_msg = $err_msg."You must provide a date<br>";
   }
 
   if (isset($_POST["time"]) && $_POST["time"] != "none") {
-    $time = $_POST["time"];
+    $time = strval($_POST["time"]);
   } else {
     $err_msg = $err_msg."You must choose a time<br>";
   }
@@ -182,6 +183,7 @@
         <?php
         if ($err_msg != "") {
           echo $err_msg;
+          echo "<a class=\"btn btn-raised btn-warning\" href=\"create.html\">Back</a>";
         } else {
           echo $first_name."<br>";
           echo $last_name."<br>";
