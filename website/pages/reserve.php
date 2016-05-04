@@ -3,6 +3,42 @@
 
 <head>
 
+  <?php
+
+  $err_msg = "";
+
+  if (isset($_GET["firstname"]) && !empty($_GET["firstname"])) {
+    $first_name = $_GET["firstname"];
+  } else {
+    $err_msg = $err_msg."You did not enter a first name<br>";
+  }
+
+  if (isset($_GET["lastname"]) && !empty($_GET["lastname"])) {
+    $last_name = $_GET["lastname"];
+  } else {
+    $err_msg = $err_msg."You did not enter a last name<br>";
+  }
+
+  if (isset($_GET["contact"])){
+    if ($_GET["contact"] == "phone") {
+      if (isset($_GET["phone"]) && !empty($_GET["phone"])){
+        $phone = $_GET["phone"];
+      } else {
+        $err_msg = $err_msg."You selected phone number but did not enter a phone number<br>";
+      }
+    } else if ($_GET["contact"] == "email") {
+      if (isset($_GET["email"]) && !empty($_GET["email"])){
+        $email = $_GET["email"];
+      } else {
+        $err_msg = $err_msg."You selected email but did not enter an email<br>";
+      }
+    }
+  } else {
+    $err_msg = $err_msg."There was an unknown erroe with the contact section of the form<br>";
+  }
+
+  ?>
+
 	<!--Favicons-->
 	<link rel="apple-touch-icon" sizes="57x57" href="../apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="../apple-icon-60x60.png">
@@ -106,101 +142,22 @@
 	<div class="header-color"></div>
 	<div class="container fly-in" produces="intro-animation-up">
 		<div class="well form-card">
-			<h2 class="text-center">Create a Reservation</h2>
-			<form action="reserve.php" method="get">
-				<fieldset>
-
-				  <div class="form-group">
-						<h2 class="form-item-title">First Name</h2>
-						<div class="col-md-8">
-						  <input type="text" class="form-control" id="firstName" placeholder="Enter text here" name="firstname">
-						</div>
-				  </div>
-
-				  <div class="form-group">
-						<h2 class="form-item-title">Last Name</h2>
-						<div class="col-md-8">
-						  <input type="text" class="form-control" id="lastName" placeholder="Enter text here" name="lastname">
-						</div>
-				  </div>
-
-				  <div class="form-group radio-group">
-						<h2 class="form-item-title">Contact Information</h2>
-						<div class="radio">
-						  <label id="r-phone">
-								<input type="radio" name="contact" value="phone" checked="checked"> Phone Number
-						  </label>
-						</div>
-						<div class="radio">
-						  <label id="r-email">
-								<input type="radio" name="contact" value="email">Email Address
-						  </label>
-						</div>
-				  </div>
-
-				  <div class="form-group label-floating col-md-8" id="phone">
-						<label class="control-label" for="phone">Phone Number</label>
-						<input class="form-control" id="phone" type="text" name="phone">
-				  </div>
-
-				  <div class="form-group label-floating hidden col-md-8" id="email">
-						<label class="control-label" for="email">Email Address</label>
-						<input class="form-control" id="email" type="text" name="email">
-				  </div>
-
-				  <div class="form-group col-md-4">
-						<h2 class="form-item-title" id="party-fix">Number of Party Members</h2>
-						<input class="form-control" type="number" name="party_memebers">
-				  </div>
-
-				  <div class="form-group">
-						<h2 class="form-item-title">Location</h2>
-						<div class="col-md-8">
-						  <select id="partyMembers" class="form-control" name="location">
-								<option value="none">Please select an option</option>
-								<option value="atlanta">Atlanta, Georgia</option>
-								<option value="new_york_city">New York City, New York</option>
-								<option value="chicago">Chicago, Illinois</option>
-								<option value="kansas_city">Kansas City, Missouri</option>
-						  </select>
-						</div>
-				  </div>
-
-				  <div class="form-group col-md-4">
-						<h2 class="form-item-title" id="date-fix">Date</h2>
-						<input class="form-control" type="text" id="datetimepicker" placeholder="mm/dd/yyyy"/ name="date"><br><br>
-					</div>
-
-					<div class="form-group">
-						<h2 class="form-item-title">Time</h2>
-						<div class="col-md-8">
-						  <select id="partyMembers" class="form-control" name="time">
-								<option value="am7">7:00 A.M.</option>
-								<option value="am8">8:00 A.M.</option>
-								<option value="am9">9:00 A.M.</option>
-								<option value="am10">10:00 A.M.</option>
-								<option value="am11">11:00 A.M.</option>
-								<option value="am12">12:00 A.M.</option>
-								<option value="pm1">1:00 P.M.</option>
-								<option value="pm2">2:00 P.M.</option>
-								<option value="pm3">3:00 P.M.</option>
-								<option value="pm4">4:00 P.M.</option>
-								<option value="pm5">5:00 P.M.</option>
-								<option value="pm6">6:00 P.M.</option>
-								<option value="pm7">7:00 P.M.</option>
-
-							</select>
-						</div>
-				  </div>
-
-				  <div class="form-group submit-button">
-						<div class="col-md-8">
-						  <button type="submit" class="btn btn-raised btn-warning" name="submit">Submit</button>
-						</div>
-				  </div>
-
-		  	</fieldset>
-			</form>
+			<h2 class="text-center">
+        <?php
+          if ($err_msg != "") {
+            echo "Error";
+          }
+       ?>
+      </h2>
+      <p>
+        <?php
+        if ($err_msg != "") {
+          echo $err_msg;
+        } else {
+          echo $first_name;
+        }
+        ?>
+      </p>
 		</div>
 	</div>
 </div>
