@@ -41,7 +41,7 @@
   }
 
   if (isset($_POST["party_members"]) && !empty($_POST["party_members"])) {
-    $party_members = strval($_POST["party_members"]);
+    $party_members = intval($_POST["party_members"]);
   } else {
     $err_msg = $err_msg."You must enter the number of party members<br>";
   }
@@ -62,6 +62,17 @@
     $time = strval($_POST["time"]);
   } else {
     $err_msg = $err_msg."You must choose a time<br>";
+  }
+
+  if ($err_msg == "") {
+    $conn = mysqli_connect("localhost", "root", "", "missspelt") or die("Couldn't connect to db server");
+    $sql = "INSERT INTO reservations (first_name, last_name, contact_type, contact, party_members, location, date, time)
+    VALUES ('$first_name', '$last_name', '$contact_type', '$contact', $party_members,  '$location', '$date', '$time')";
+    if ($conn->query($sql) === TRUE) {
+      $result = "New record created successfully";
+    } else {
+      $result = "Error: " . $sql . "<br>" . $conn->error;
+    }
   }
 
 
@@ -185,6 +196,7 @@
           echo $err_msg;
           echo "<a class=\"btn btn-raised btn-warning\" href=\"create.html\">Back</a>";
         } else {
+          echo $result."<br>";
           echo $first_name."<br>";
           echo $last_name."<br>";
           echo "$contact_type - $contact <br>";
