@@ -1,19 +1,15 @@
-$("#nav ul li a[href^='#']").on('click', function(e) {
+//smooth scrolls <a> elements that link to the same page with an id
+$('a[href*=#]:not([href=#])').click(function() {
+  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    || location.hostname == this.hostname) {
 
-   // prevent default anchor click behavior
-   e.preventDefault();
-
-   // store hash
-   var hash = this.hash;
-
-   // animate
-   $('html, body').animate({
-       scrollTop: $(hash).offset().top
-     }, 300, function(){
-
-       // when done, add hash to url
-       // (default click behaviour)
-       window.location.hash = hash;
-     });
-
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    if (target.length) {
+      $('html,body').animate({
+      scrollTop: target.offset().top
+    }, 1000);
+    return false;
+    }
+  }
 });

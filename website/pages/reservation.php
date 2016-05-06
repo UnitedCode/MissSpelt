@@ -3,6 +3,54 @@
 
 <head>
 
+  <?php
+
+  $err_msg = "";
+
+  if (isset($_POST["firstname"]) && !empty($_POST["firstname"])) {
+    $first_name = strval($_POST["firstname"]);
+  } else {
+    $err_msg = $err_msg."You did not enter a first name<br>";
+  }
+
+  if (isset($_POST["lastname"]) && !empty($_POST["lastname"])) {
+    $last_name = strval($_POST["lastname"]);
+  } else {
+    $err_msg = $err_msg."You did not enter a last name<br>";
+  }
+
+  if (isset($_POST["contact"])){
+    if ($_POST["contact"] == "phone") {
+      if (isset($_POST["phone"]) && !empty($_POST["phone"])){
+        $contact_type = "phone";
+        $contact = strval($_POST["phone"]);
+        $contact = preg_replace("/[^0-9]/","",$contact);
+      } else {
+        $err_msg = $err_msg."You selected phone number but did not enter a phone number<br>";
+      }
+    } else if ($_POST["contact"] == "email") {
+      if (isset($_POST["email"]) && !empty($_POST["email"])){
+        $contact_type = "email";
+        $contact = strval($_POST["email"]);
+      } else {
+        $err_msg = $err_msg."You selected email but did not enter an email<br>";
+      }
+    }
+  } else {
+    $err_msg = $err_msg."There was an unknown error with the contact section of the form<br>";
+  }
+
+  if ($err_msg == "") {
+    $conn = mysqli_connect("localhost", "root", "", "missspelt") or die("Couldn't connect to db server");
+    $sql = "SELECT * FROM reservations WHERE (first_name = '$first_name') AND (last_name = '$last_name') AND (contact_type = '$contact_type') AND (contact = '$contact')";
+    if (!$result = $conn->query($sql)) {
+      $err_msg = $err_msg.'There was an error running query[' . $conn->error . ']<br>';
+    }
+  }
+
+
+  ?>
+
 	<!--Favicons-->
 	<link rel="apple-touch-icon" sizes="57x57" href="../apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="../apple-icon-60x60.png">
@@ -31,10 +79,10 @@
 
 	<meta property="og:title" content="MissSpelt!" />
 	<meta property="og:image" content="http://i.imgur.com/JYD5bDa.jpg">
-	<meta property="og:url" content="missspelt.co/pages/check.html" />
+	<meta property="og:url" content="missspelt.co/pages/create.html" />
 	<meta property="og:description" content="Delicious, Healthy...Gluten-free" />
 
-	<title>MissSpelt! | Check your Reservation</title>
+	<title>MissSpelt! | Create a Reservation</title>
 
 	<!--Favicon-->
 	<link rel='shortcut icon' href='../favicon.ico' type='image/x-icon'/ >
@@ -49,6 +97,9 @@
 	<!-- CSS Scripts for material design -->
 	<link href="../css/bootstrap-material-design.min.css" rel="stylesheet">
 	<link href="../css/ripples.min.css" rel="stylesheet">
+
+	<!-- CSS Scripts for date and time picker -->
+	<link href="../css/date-time.css" rel="stylesheet">
 
 	<!-- Custom Sitewide Styles -->
 	<link href="../css/global.css" rel="stylesheet">
@@ -71,7 +122,7 @@
 
 <body>
 
-<div class="main c-main">
+<div class="main">
 	<div class="bs-component">
 		<div class="navbar navbar-default navbar-fixed-top">
 		  <div class="nav-container">
@@ -102,55 +153,33 @@
 
 	<div class="header-color"></div>
 	<div class="container fly-in" produces="intro-animation-up">
-		<div class="jumbotron form-card">
-			<h2 class="text-center">Check on a Reservation</h2>
-			<form action="reservation.php" method="POST">
-				<fieldset>
-					<div class="form-group">
-						<h2 class="form-item-title">First Name</h2>
-						<div class="col-md-8">
-						  <input type="text" class="form-control" id="firstName" placeholder="Enter text here" name="firstname">
-						</div>
-				  </div>
-
-				  <div class="form-group">
-						<h2 class="form-item-title">Last Name</h2>
-						<div class="col-md-8">
-						  <input type="text" class="form-control" id="lastName" placeholder="Enter text here" name="lastname">
-						</div>
-				  </div>
-
-				  <div class="form-group radio-group">
-						<h2 class="form-item-title">Contact Information</h2>
-						<div class="radio">
-						  <label id="r-phone">
-								<input type="radio" name="contact" value="phone" checked="checked"> Phone Number
-						  </label>
-						</div>
-						<div class="radio">
-						  <label id="r-email">
-								<input type="radio" name="contact" value="email">Email Address
-						  </label>
-						</div>
-				  </div>
-
-				  <div class="form-group label-floating col-md-8" id="phone">
-						<label class="control-label" for="phone">Phone number</label>
-						<input class="form-control" id="phone" type="text" name="phone">
-				  </div>
-
-				  <div class="form-group label-floating hidden col-md-8" id="email">
-						<label class="control-label" for="email">Email Address</label>
-						<input class="form-control" id="email" type="text" name="email">
-				  </div>
-
-				  <div class="form-group submit-button">
-						<div class="col-md-8">
-						  <button type="submit" class="btn btn-raised btn-warning" name="submit">Submit</button>
-						</div>
-				  </div>
-		  	</fieldset>
-			</form>
+		<div class="well form-card">
+			<h2 class="text-center">
+        <?php
+          if ($err_msg != "") {
+            echo "Error";
+          } else {
+            echo "Result";
+          }
+       ?>
+      </h2>
+      <p>
+        <?php
+        if ($err_msg != "") {
+          echo $err_msg;
+          echo "<a class=\"btn btn-raised btn-warning\" href=\"check.html\">Back</a>";
+        } else {
+          $counter = 0;
+          while ($row = $result->fetch_assoc()) {
+            echo "<pre>";
+            print_r($row);
+            echo "</pre>";
+            $counter++;
+          }
+          echo $counter." result(s) found";
+        }
+        ?>
+      </p>
 		</div>
 	</div>
 </div>
@@ -160,7 +189,7 @@
   	<div class="col-md-4 copyright">
   		<p>© Copyright 2016 MissSpelt!</p>
   		<br>
-  		<p>Credits for technologies and images used<br>can be found <a href="credits.html">here</a></p>
+  		<p>Credits for technologies and images used<br>can be found <a href="credits.html">here.</a></p>
   	</div>
   	<div class="col-md-4 f-logo">
   		<img src="../img/logo.png">
@@ -168,13 +197,13 @@
   	<div class="col-md-4 social-btns">
   		<ul>
   			<li id="facebook">
-  				<a href="http://www.facebook.com/sharer.php?u=http://missspelt.co/pages/check.html" target="_blank"><i class="fa fa-facebook fa-fw fa-5x"></i></a>
+  				<a href="http://www.facebook.com/sharer.php?u=http://missspelt.co/pages/create.html" target="_blank"><i class="fa fa-facebook fa-fw fa-5x"></i></a>
   			</li>
   			<li id="twitter">
-  				<a href="https://twitter.com/share?url=http://missspelt.co/pages/check.html&amp;text=MissSpelt!%20Delicious,%20Helthy...Gluten-free&amp;hashtags=glutenfree" target="_blank"><i class="fa fa-twitter fa-fw fa-5x"></i></a>
+  				<a href="https://twitter.com/share?url=http://missspelt.co/pages/create.html&amp;text=MissSpelt!%20Delicious,%20Helthy...Gluten-free&amp;hashtags=glutenfree" target="_blank"><i class="fa fa-twitter fa-fw fa-5x"></i></a>
   			</li>
   			<li id="googleplus">
-  				<a href="https://plus.google.com/share?url=http://missspelt.co/pages/check.html" target="_blank">
+  				<a href="https://plus.google.com/share?url=http://missspelt.co/pages/create.html" target="_blank">
   					<span class="fa-stack fa-3x">
 						  <i class="fa fa-circle fa-stack-2x"></i>
 						  <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
@@ -182,7 +211,7 @@
   				</a>
   			</li>
   			<li id="reddit">
-  				<a href="http://reddit.com/submit?url=http://missspelt.co/pages/check.html&amp;title=MissSpelt! Delcious, Healthy...Gluten-free" target="_blank"><i class="fa fa-reddit-alien fa-fw fa-5x"></i></a>
+  				<a href="http://reddit.com/submit?url=http://missspelt.co/pages/create.html&amp;title=MissSpelt! Delcious, Healthy...Gluten-free" target="_blank"><i class="fa fa-reddit-alien fa-fw fa-5x"></i></a>
   			</li>
   		</ul>
   	</div>
@@ -190,10 +219,15 @@
 </footer>
 
 <!-- jQuery -->
-<script src="../js/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+<script type="text/javascript" src="../js/date-time.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="../js/bootstrap.min.js"></script>
+
+<!-- Script for date and time picker -->
+<script type="text/javascript" src="../js/date-time.js"></script>
 
 <!-- Custom scripts for this page -->
 <script src="../js/pages/create_check.js"></script>
