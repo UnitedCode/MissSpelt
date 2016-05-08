@@ -104,7 +104,8 @@
 	<div class="container fly-in" produces="intro-animation-up">
 		<div class="jumbotron form-card">
 			<h2 class="text-center">Check on a Reservation</h2>
-			<form action="reservation.php" method="POST">
+			<div id="error_msg"></div>
+			<form action="reservation.php" method="POST" name="check" onsubmit="return validateCheck();">
 				<fieldset>
 					<div class="form-group">
 						<h2 class="form-item-title">First Name</h2>
@@ -136,12 +137,12 @@
 
 				  <div class="form-group label-floating col-md-8" id="phone">
 						<label class="control-label" for="phone">Phone number</label>
-						<input class="form-control" id="phone" type="text" name="phone">
+						<input class="form-control" id="phoneInput" type="text" name="phone">
 				  </div>
 
 				  <div class="form-group label-floating hidden col-md-8" id="email">
 						<label class="control-label" for="email">Email Address</label>
-						<input class="form-control" id="email" type="text" name="email">
+						<input class="form-control" id="emailInput" type="text" name="email">
 				  </div>
 
 					<br><br><br>
@@ -197,6 +198,9 @@
 
 <!-- Bootstrap Core JavaScript -->
 <script src="../js/bootstrap.min.js"></script>
+
+<!-- Validates the form before submitting to the server -->
+<script type="text/javascript" src="../js/validate.js"></script>
 
 <!-- Recaptcha code from Google -->
 <script src='https://www.google.com/recaptcha/api.js'></script>

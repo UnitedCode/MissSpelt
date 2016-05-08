@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -107,7 +107,8 @@
 	<div class="container fly-in" produces="intro-animation-up">
 		<div class="well form-card">
 			<h2 class="text-center">Create a Reservation</h2>
-			<form action="reserve.php" method="POST">
+			<div id="error_msg"></div>
+			<form action="reserve.php" method="POST" name="create" onsubmit="return validateCreate()">
 				<fieldset>
 
 				  <div class="form-group">
@@ -140,23 +141,23 @@
 
 				  <div class="form-group label-floating col-md-8" id="phone">
 						<label class="control-label" for="phone">Phone Number</label>
-						<input class="form-control" id="phone" type="text" name="phone">
+						<input class="form-control" id="phoneInput" type="text" name="phone">
 				  </div>
 
 				  <div class="form-group label-floating hidden col-md-8" id="email">
 						<label class="control-label" for="email">Email Address</label>
-						<input class="form-control" id="email" type="text" name="email">
+						<input class="form-control" id="emailInput" type="text" name="email">
 				  </div>
 
 				  <div class="form-group col-md-4">
 						<h2 class="form-item-title" id="party-fix">Number of Party Members</h2>
-						<input class="form-control" type="number" name="party_members">
+						<input class="form-control" type="number" name="party_members" id="partyMembers">
 				  </div>
 
 				  <div class="form-group">
 						<h2 class="form-item-title">Location</h2>
 						<div class="col-md-8">
-						  <select id="partyMembers" class="form-control" name="location">
+						  <select id="location" class="form-control" name="location">
 								<option value="none">Please select an option</option>
 								<option value="Atlanta, Georgia">Atlanta, Georgia</option>
 								<option value="New York City, New York">New York City, New York</option>
@@ -174,7 +175,7 @@
 					<div class="form-group">
 						<h2 class="form-item-title">Time</h2>
 						<div class="col-md-8">
-						  <select id="partyMembers" class="form-control" name="time">
+						  <select id="time" class="form-control" name="time">
 								<option value="none">Please select an approximate time</option>
 								<option value="7:00 A.M.">7:00 A.M.</option>
 								<option value="8:00 A.M.">8:00 A.M.</option>
@@ -198,7 +199,7 @@
 
 				  <div class="form-group submit-button">
 						<div class="col-md-8">
-						  <button type="submit" class="btn btn-raised btn-warning" name="submit">Submit</button>
+						  <button type="submit" class="btn btn-raised btn-warning" name="submit" herf="#">Submit</button>
 						</div>
 				  </div>
 
@@ -249,6 +250,9 @@
 
 <!-- Bootstrap Core JavaScript -->
 <script src="../js/bootstrap.min.js"></script>
+
+<!-- Validates the form before submitting to the server -->
+<script type="text/javascript" src="../js/validate.js"></script>
 
 <!-- Script for date and time picker -->
 <script type="text/javascript" src="../js/date-time.js"></script>

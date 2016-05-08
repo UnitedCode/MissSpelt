@@ -75,6 +75,10 @@ footer > .row {
 	padding-left: 5%;
 }
 
+.error {
+  background-image: linear-gradient(rgb(244, 67, 54), rgb(244, 67, 54)), linear-gradient(rgb(244, 67, 54), rgb(244, 67, 54)) !important;
+}
+
 .f-logo img {
 	width: 300px;
 }

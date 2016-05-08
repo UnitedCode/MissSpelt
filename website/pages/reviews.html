@@ -160,8 +160,9 @@
 				<h2 class="text-center">Create a Review</h2>
       </div>
       <div class="modal-body">
+				<div id="error_msg"></div>
 				<div class="form-card">
-					<form action="create_review.php" method="post">
+					<form action="create_review.php" method="post" name="reviews" onsubmit="return validateReview();">
 						<fieldset>
 						  <div class="form-group">
 								<h2 class="form-item-title">First Name</h2>
@@ -193,7 +194,7 @@
 						  <div class="form-group">
 								<h2 class="form-item-title">Write your review here.</h2>
 								<div class="col-md-8">
-								  <textarea type="text" class="form-control" id="lastName" placeholder="Enter text here" name="review"></textarea>
+								  <textarea type="text" class="form-control" id="review" placeholder="Enter text here" name="review"></textarea>
 								</div>
 						  </div>
 							<br>
@@ -250,6 +251,9 @@
 
 <!-- Bootstrap Core JavaScript -->
 <script src="../js/bootstrap.min.js"></script>
+
+<!-- Validates the form before submitting to the server -->
+<script type="text/javascript" src="../js/validate.js"></script>
 
 <!-- Javascript files for the material design elements -->
 <script src="../js/material.min.js"></script>

@@ -23,7 +23,7 @@
   }
 
   if (isset($_POST["review"]) && !empty($_POST["review"])) {
-   $review = strval($_POST["lastname"]);
+   $review = strval($_POST["review"]);
   } else {
    $err_msg = $err_msg."You did not write a review<br>";
   }
