@@ -79,10 +79,15 @@
 
 .main {
 	background-color: #FFFFFF;
+  min-height: 100%;
+}
+
+.result {
+  border: 1px solid #ccc;
 }
 
 #party-fix {
-	margin-left:0; 
+	margin-left:0;
 	margin-top:0;
 }
 

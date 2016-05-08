@@ -190,23 +190,47 @@
           }
        ?>
       </h2>
-      <p>
         <?php
         if ($err_msg != "") {
           echo $err_msg;
           echo "<a class=\"btn btn-raised btn-warning\" href=\"create.html\">Back</a>";
         } else {
-          echo $result."<br>";
-          echo $first_name."<br>";
-          echo $last_name."<br>";
-          echo "$contact_type - $contact <br>";
-          echo $party_members."<br>";
-          echo $location."<br>";
-          echo $date."<br>";
-          echo $time."<br>";
+          ?>
+      <br>
+      <h4 class="text-center">Your reservation has been saved succesfully.</h4>
+      <br>
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>Name</td>
+            <td><?php echo $first_name." ".$last_name;?></td>
+          </tr>
+          <tr>
+            <td>Contact</td>
+            <td><?php echo $contact;?></td>
+          </tr>
+          <tr>
+            <td># of party menbers</td>
+            <td><?php echo $party_members;?></td>
+          </tr>
+          <tr>
+            <td>Location</td>
+            <td><?php echo $location;?></td>
+          </tr>
+          <tr>
+            <td>Date</td>
+            <td><?php echo $date;?></td>
+          </tr>
+          <tr>
+            <td>Time</td>
+            <td><?php echo $time;?></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="text-center">Remeber that you can check the details of your reservation at anytime <a href="check.html">here</a></p>
+        <?php
         }
         ?>
-      </p>
 		</div>
 	</div>
 </div>

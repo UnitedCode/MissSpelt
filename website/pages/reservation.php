@@ -159,27 +159,70 @@
           if ($err_msg != "") {
             echo "Error";
           } else {
-            echo "Result";
+            if ($result->num_rows === 0) {
+              echo 'No results';
+            } else {
+              echo "Your Reservations";
+            }
           }
        ?>
       </h2>
-      <p>
-        <?php
+      <?php
         if ($err_msg != "") {
           echo $err_msg;
           echo "<a class=\"btn btn-raised btn-warning\" href=\"check.html\">Back</a>";
         } else {
-          $counter = 0;
-          while ($row = $result->fetch_assoc()) {
-            echo "<pre>";
-            print_r($row);
-            echo "</pre>";
-            $counter++;
+          if ($result->num_rows === 0) {
+      ?>
+      <br>
+      <br>
+      <p class="text-center" style="font-size:18px;">We couldn't find any reservations matching the information that you submitted. Pleae try again or create a new reservation.</p>
+      <br>
+      <p class="text-center"><a href="create.html" class="btn btn-warning btn-raised">Create</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="check.html" class="btn btn-warning btn-raised">Check</a></p>
+      <?php
+          } else {
+            while ($row = $result->fetch_assoc()) {
+      ?>
+      <div class="result">
+        <table class="table">
+          <tbody>
+            <tr>
+              <td>Name</td>
+              <td><?php echo $row["first_name"]." ".$row["last_name"];?></td>
+            </tr>
+            <tr>
+              <td>Contact</td>
+              <td><?php echo $row["contact"];?></td>
+            </tr>
+            <tr>
+              <td># of party menbers</td>
+              <td><?php echo $row["party_members"]?></td>
+            </tr>
+            <tr>
+              <td>Location</td>
+              <td><?php echo $row["location"];?></td>
+            </tr>
+            <tr>
+              <td>Date</td>
+              <td><?php echo $row["date"];?></td>
+            </tr>
+            <tr>
+              <td>Time</td>
+              <td><?php echo $row["time"];?></td>
+            </tr>
+          </tbody>
+        </table>
+        <form action="deletereserve.php" method="POST" class="text-center">
+          <input type="hidden" name="record" value="<?php echo$row["id"];?>">
+          <input class="btn btn-raised btn-danger" type="Submit" name="delete" value="DELETE">
+        </form>
+      </div>
+      <br>
+      <?php
+            }
           }
-          echo $counter." result(s) found";
         }
-        ?>
-      </p>
+      ?>
 		</div>
 	</div>
 </div>
