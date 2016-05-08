@@ -1,5 +1,6 @@
 body, html {
   width: 100%;
+  height: 100%;
  }
 
 .form-card {
@@ -53,13 +54,7 @@ body, html {
   margin-bottom: 0;
 }
 .rating {
-  text-align: center;
-  font-size: 30px;
-  color: #e52;
-  text-shadow: 0 0 1px #333;
-}
-.rating{
-  text-align: center;
+  text-align: left;
   font-size: 30px;
   color: #e52;
   text-shadow: 0 0 1px #333;
@@ -131,12 +126,8 @@ body, html {
   text-shadow: 0 0 1px #333;
 }
 
-.main {
-  height: 100%
-}
-
 #party-fix {
-  margin-left:0; 
+  margin-left:0;
   margin-top:0;
 }
 
@@ -164,6 +155,7 @@ body, html {
 
 .main {
   background-color: #FFFFFF;
+  min-height: 100%
 }
 
 .menu-card {

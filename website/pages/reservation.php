@@ -48,9 +48,7 @@
     }
   }
 
-
   ?>
-
 	<!--Favicons-->
 	<link rel="apple-touch-icon" sizes="57x57" href="../apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="../apple-icon-60x60.png">
@@ -82,7 +80,7 @@
 	<meta property="og:url" content="missspelt.co/pages/create.html" />
 	<meta property="og:description" content="Delicious, Healthy...Gluten-free" />
 
-	<title>MissSpelt! | Create a Reservation</title>
+	<title>MissSpelt! | Check a Reservation</title>
 
 	<!--Favicon-->
 	<link rel='shortcut icon' href='../favicon.ico' type='image/x-icon'/ >
