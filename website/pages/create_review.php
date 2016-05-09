@@ -29,7 +29,7 @@
   }
 
   if ($err_msg == "") {
-    $conn = mysqli_connect("localhost", "root", "", "missspelt") or die("Couldn't connect to db server");
+    $conn = mysqli_connect("localhost", "levizit_user", "FrcbXw7ku-w%", "levizit_missspelt") or die("Couldn't connect to db server");
     $sql = "INSERT INTO review (first_name, last_name, rating, review, approved)
     VALUES ('$first_name', '$last_name', '$rating', '$review', 'false')";
     if ($conn->query($sql) === TRUE) {

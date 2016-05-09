@@ -65,7 +65,7 @@
   }
 
   if ($err_msg == "") {
-    $conn = mysqli_connect("localhost", "root", "", "missspelt") or die("Couldn't connect to db server");
+    $conn = mysqli_connect("localhost", "levizit_user", "FrcbXw7ku-w%", "levizit_missspelt") or die("Couldn't connect to db server");
     $sql = "INSERT INTO reservations (first_name, last_name, contact_type, contact, party_members, location, date, time)
     VALUES ('$first_name', '$last_name', '$contact_type', '$contact', $party_members,  '$location', '$date', '$time')";
     if ($conn->query($sql) === TRUE) {

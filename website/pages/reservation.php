@@ -41,7 +41,7 @@
   }
 
   if ($err_msg == "") {
-    $conn = mysqli_connect("localhost", "root", "", "missspelt") or die("Couldn't connect to db server");
+    $conn = mysqli_connect("localhost", "levizit_user", "FrcbXw7ku-w%", "levizit_missspelt") or die("Couldn't connect to db server");
     $sql = "SELECT * FROM reservations WHERE (first_name = '$first_name') AND (last_name = '$last_name') AND (contact_type = '$contact_type') AND (contact = '$contact')";
     if (!$result = $conn->query($sql)) {
       $err_msg = $err_msg.'There was an error running query[' . $conn->error . ']<br>';
