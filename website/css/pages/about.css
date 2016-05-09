@@ -14,6 +14,22 @@ body {
 	font-size: 17px;
 }
 
+.team-card {
+	background-color: #E65100;
+	margin-top: 20px;
+	box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+}
+
+.team-card-text {
+	padding: 5px;
+	color: white;
+	min-height: 220px;
+}
+
+.faq {
+	color: #E65100;
+}
+
 @media (max-width: 450px) {
 	.well p {
     font-size: 14px;
