@@ -1,15 +1,15 @@
 function validateCreate() {
 	var result = true;
 	var errorMessage = "Oh snap! Looks like there are some mistakes in the form. Please make any necessary changes and try again.";
-	var firstname = document.forms["reviews"]["firstname"].value;
-	var lastname = document.forms["reviews"]["lastname"].value;
-	var contactType = document.forms["reviews"]["contact"].value;
-	var phone = document.forms["reviews"]["phone"].value;
-	var email = document.forms["reviews"]["email"].value;
-	var partyMembers = document.forms["reviews"]["party_members"].value;
-	var location = document.forms["reviews"]["location"].value;
-	var date = document.forms["reviews"]["date"].value;
-	var time = document.forms["reviews"]["time"].value;
+	var firstname = document.forms["create"]["firstname"].value;
+	var lastname = document.forms["create"]["lastname"].value;
+	var contactType = document.forms["create"]["contact"].value;
+	var phone = document.forms["create"]["phone"].value;
+	var email = document.forms["create"]["email"].value;
+	var partyMembers = document.forms["create"]["party_members"].value;
+	var location = document.forms["create"]["location"].value;
+	var date = document.forms["create"]["date"].value;
+	var time = document.forms["create"]["time"].value;
 
 	if (firstname == null || firstname == "") {
 		$("#firstName").addClass("error");
@@ -58,11 +58,11 @@ function validateCreate() {
 function validateCheck() {
 	var result = true;
 	var errorMessage = "Oh snap! Looks like there are some mistakes in the form. Please make any necessary changes and try again.";
-	var firstname = document.forms["reviews"]["firstname"].value;
-	var lastname = document.forms["reviews"]["lastname"].value;
-	var contactType = document.forms["reviews"]["contact"].value;
-	var phone = document.forms["reviews"]["phone"].value;
-	var email = document.forms["reviews"]["email"].value;
+	var firstname = document.forms["check"]["firstname"].value;
+	var lastname = document.forms["check"]["lastname"].value;
+	var contactType = document.forms["check"]["contact"].value;
+	var phone = document.forms["check"]["phone"].value;
+	var email = document.forms["check"]["email"].value;
 
 	if (firstname == null || firstname == "") {
 		$("#firstName").addClass("error");
