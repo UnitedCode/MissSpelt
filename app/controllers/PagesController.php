@@ -8,4 +8,19 @@ class PagesController
 	{
 		return view('index');
 	}
+
+	public function menu()
+    {
+        return view('menu');
+    }
+
+    public function contact()
+    {
+        return view('contact');
+    }
+
+    public function about()
+    {
+        return view('about');
+    }
 }

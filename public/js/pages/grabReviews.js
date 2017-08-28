@@ -16,4 +16,4 @@ $.getJSON( "https://spreadsheets.google.com/feeds/list/1WLKz1i50-MnZqReppIfKrm7O
 		});
 	});
 });
-https://docs.google.com/spreadsheets/d/1WLKz1i50-MnZqReppIfKrm7ODqjLx36ul3KIbBvtijY/pubhtml
+//https://docs.google.com/spreadsheets/d/1WLKz1i50-MnZqReppIfKrm7ODqjLx36ul3KIbBvtijY/pubhtml

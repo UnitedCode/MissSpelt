@@ -1,15 +1,15 @@
 <?php
 
 $router->get('', 'PagesController@index');
-$router->get('menu', 'PagesController@index');
-$router->get('contact', 'PagesController@index');
-$router->get('about', 'PagesController@index');
+$router->get('menu', 'PagesController@menu');
+$router->get('contact', 'PagesController@contact');
+$router->get('about', 'PagesController@about');
 
-$router->get('reviews', 'PagesController@index');
-$router->post('reviews', 'PagesController@index');
+$router->get('reviews', 'ReviewController@index');
+$router->post('reviews', 'PagesController@create');
 
-$router->get('reservations', 'PagesController@index');
-$router->get('reservations/create', 'PagesController@index');
-$router->post('reservations/create', 'PagesController@index');
-$router->get('reservation/check', 'PagesController@index');
-$router->post('reservations/check', 'PagesController@index');
+$router->get('reservations', 'ReservationController@index');
+$router->get('reservations/create', 'ReservationController@create');
+$router->post('reservations/create', 'ReservationController@store');
+$router->get('reservation/check', 'ReservationController@check');
+$router->post('reservations/check', 'ReservationController@view');

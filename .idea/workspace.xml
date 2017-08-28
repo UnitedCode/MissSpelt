@@ -2,121 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33978aff-469b-4fc5-a021-cbda30755bdf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/index.view.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/Request.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/Router.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/bootstrap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/helpers.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/android-icon-144x144.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/android-icon-192x192.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/android-icon-36x36.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/android-icon-48x48.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/android-icon-72x72.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/android-icon-96x96.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/apple-icon-114x114.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/apple-icon-120x120.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/apple-icon-144x144.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/apple-icon-152x152.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/apple-icon-180x180.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/apple-icon-57x57.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/apple-icon-60x60.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/apple-icon-72x72.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/apple-icon-76x76.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/apple-icon-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/apple-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/browserconfig.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/css/bootstrap-material-design.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/css/date-time.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/css/global.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/css/pages/about.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/css/pages/contact.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/css/pages/create-check.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/css/pages/home.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/css/pages/loyalty.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/css/pages/menu.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/css/pages/reservations.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/css/pages/review.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/css/ripples.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/favicon-16x16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/favicon-32x32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/favicon-96x96.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/about/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/about/brianna.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/about/header.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/about/jonathon.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/contact/atlanta.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/contact/chicago.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/contact/kansasCity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/contact/newYork.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/logo-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/menu/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/menu/berry_pie.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/menu/brownies.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/menu/cabbage_salad.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/menu/carrot_cake.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/menu/cashew_salad.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/menu/cheesecake.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/menu/chicken_enchiladas.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/menu/chicken_sandwhich.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/menu/chicken_wings.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/menu/chips_and_salsa.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/menu/fish_tacos.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/menu/greek_salad.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/menu/green_salad.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/menu/lemon_cake.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/menu/onion_rings.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/menu/pancakes.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/menu/pizza.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/menu/pumpkin_roll.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/menu/quinoa.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/menu/rasberry_pecan_salad.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/menu/salmon_spread.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/menu/stuffed_mushrooms.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/menu/sushi.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/menu/taco_salad.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/js/date-time.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/js/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/js/material.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/js/pages/create_check.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/js/pages/grabReviews.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/js/ripples.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/js/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/js/smoothscroll.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/js/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/ms-icon-144x144.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/ms-icon-150x150.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/ms-icon-310x310.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/ms-icon-70x70.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/pages/about.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/pages/check.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/pages/contact.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/pages/create.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/pages/create_review.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/pages/credits.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/pages/deletereserve.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/pages/loyalty.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/pages/menu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/pages/reservation.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/pages/reservations.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/pages/reserve.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/pages/reviews.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/about.view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/contact.view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/menu.view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/partials/footer.view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/partials/meta.view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/partials/scripts.view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/PagesController.php" afterPath="$PROJECT_DIR$/app/controllers/PagesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ReservationsController.php" afterPath="$PROJECT_DIR$/app/controllers/ReservationsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index.view.php" afterPath="$PROJECT_DIR$/app/views/index.view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/pages/grabReviews.js" afterPath="$PROJECT_DIR$/public/js/pages/grabReviews.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -135,50 +35,16 @@
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-              <folding>
-                <element signature="e#69#90#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PagesController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/PagesController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/index.view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>i</find>
+      <find>../img/</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>/public/img/</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -193,13 +59,32 @@
         <option value="$PROJECT_DIR$/core/Request.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/core/Router.php" />
-        <option value="$PROJECT_DIR$/app/views/index.view.php" />
+        <option value="$PROJECT_DIR$/app/views/partials/head.view.php" />
+        <option value="$PROJECT_DIR$/public/js/pages/grabReviews.js" />
+        <option value="$PROJECT_DIR$/app/views/partials/scripts.view.php" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/app/views/partials/footer.view.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/controllers/ReservationsController.php" />
+        <option value="$PROJECT_DIR$/app/controllers/PagesController.php" />
+        <option value="$PROJECT_DIR$/public/pages/menu.html" />
+        <option value="$PROJECT_DIR$/app/views/menu.view.php" />
+        <option value="$PROJECT_DIR$/app/views/index.view.php" />
+        <option value="$PROJECT_DIR$/app/views/partials/meta.view.php" />
+        <option value="$PROJECT_DIR$/app/views/about.view.php" />
+        <option value="$PROJECT_DIR$/app/views/contact.view.php" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -256,7 +141,44 @@
             <path>
               <item name="MissSpelt" type="b2602c69:ProjectViewProjectNode" />
               <item name="MissSpelt" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MissSpelt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MissSpelt" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="partials" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MissSpelt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MissSpelt" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MissSpelt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MissSpelt" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MissSpelt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MissSpelt" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MissSpelt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MissSpelt" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MissSpelt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MissSpelt" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -290,21 +212,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1503943468880</updated>
-      <workItem from="1503943470034" duration="2462000" />
+      <workItem from="1503943470034" duration="4776000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2462000" />
+    <option name="totallyTimeSpent" value="4776000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1044" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -315,7 +237,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -347,14 +268,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/helpers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -379,6 +292,153 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/pages/create_check.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="170" column="26" lean-forward="false" selection-start-line="170" selection-start-column="26" selection-end-line="170" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ReservationsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/scripts.view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="66" lean-forward="true" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/PagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/footer.view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/pages/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/pages/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="351" column="6" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="351" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/pages/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3194">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="205" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index.view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/meta.view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="920">
+          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/about.view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#h5#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/menu.view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/contact.view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <marker date="1503948201565" expanded="false" signature="9589:9596" ph="×" />
+            <marker date="1503948201565" expanded="false" signature="10136:10144" ph="..." />
+            <marker date="1503948201565" expanded="false" signature="10797:10804" ph="×" />
+            <marker date="1503948201565" expanded="false" signature="11350:11358" ph="..." />
+            <marker date="1503948201565" expanded="false" signature="12006:12013" ph="×" />
+            <marker date="1503948201565" expanded="false" signature="12565:12573" ph="..." />
+            <marker date="1503948201565" expanded="false" signature="13222:13229" ph="×" />
+            <marker date="1503948201565" expanded="false" signature="13781:13789" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -389,27 +449,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/PagesController.php">
+    <entry file="file://$PROJECT_DIR$/public/js/pages/grabReviews.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index.view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="360">
+          <caret line="18" column="49" lean-forward="true" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+          <folding>
+            <marker date="1503946338255" expanded="true" signature="468:480" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
