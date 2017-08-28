@@ -8,7 +8,8 @@ class ComposerStaticInitd34184087c0b8773417ebb52be36e493
 {
     public static $classMap = array (
         'App\\Controller\\PagesController' => __DIR__ . '/../..' . '/app/controllers/PagesController.php',
-        'App\\Controller\\ReservationsController' => __DIR__ . '/../..' . '/app/controllers/ReservationsController.php',
+        'App\\Controller\\ReservationController' => __DIR__ . '/../..' . '/app/controllers/ReservationController.php',
+        'App\\Controller\\ReviewController' => __DIR__ . '/../..' . '/app/controllers/ReviewController.php',
         'App\\Core\\App' => __DIR__ . '/../..' . '/core/App.php',
         'App\\Core\\Request' => __DIR__ . '/../..' . '/core/Request.php',
         'App\\Core\\Router' => __DIR__ . '/../..' . '/core/Router.php',

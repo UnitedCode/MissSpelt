@@ -262,4 +262,6 @@
 
     <?php require('partials/scripts.view.php')?>
 
+    <script src="/public/js/ripples.min.js"></script>
+
 </body>

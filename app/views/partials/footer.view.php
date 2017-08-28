@@ -3,7 +3,7 @@
         <div class="col-sm-4 copyright">
             <p>© Copyright 2016 MissSpelt!</p>
             <br>
-            <p>Credits for technologies and images used<br>can be found <a href="pages/credits.html">here</a></p>
+            <p>Credits for technologies and images used<br>can be found <a href="/credits">here</a></p>
         </div>
         <div class="col-sm-4 f-logo">
             <img src="/public/img/logo.png">

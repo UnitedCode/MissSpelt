@@ -23,4 +23,9 @@ class PagesController
     {
         return view('about');
     }
+
+    public function credits()
+    {
+        return view('credits');
+    }
 }

@@ -16,3 +16,5 @@ $('#Parallax-content').mousemove(function(e) {
 function delay (URL) {
 	setTimeout( function() { window.location = URL }, 400);
 }
+
+$.material.init();
