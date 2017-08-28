@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use App\Model\Reservation;
+
 class ReservationController
 {
     public function index()
@@ -14,8 +16,21 @@ class ReservationController
         return view('reservations/create');
     }
 
+    public function store()
+    {
+        $reserve = new Reservation();
+        $reserve->save();
+
+        redirect('');
+    }
+
     public function check()
     {
         return view('reservations/check');
+    }
+
+    public function view()
+    {
+
     }
 }

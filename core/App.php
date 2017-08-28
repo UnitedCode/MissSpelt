@@ -27,12 +27,16 @@ class App
 
     /**
      * @param $key
+     * @throws \Exception
+     * @return mixed
      * Retrieves a value from the registry based on the key
      */
     public static function get($key)
 	{
 		if(!array_key_exists($key, static::$registry)) {
-			throw new Exception("No {$key} exists in registry");
+			throw new \Exception("No {$key} exists in registry");
 		}
+
+		return static::$registry[$key];
 	}
 }

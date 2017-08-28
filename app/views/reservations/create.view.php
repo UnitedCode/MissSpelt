@@ -43,7 +43,7 @@
             <div class="well form-card">
                 <h2 class="text-center">Create a Reservation</h2>
                 <div id="error_msg"></div>
-                <form action="/reservations/create" method="POST" name="create" onsubmit="return validateCreate();">
+                <form action="/reservations/create" method="POST" onsubmit="return validateCreate();">
                     <fieldset>
 
                         <div class="form-group">
