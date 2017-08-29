@@ -49,7 +49,7 @@
                                     <a href="javascript:delay('/reservations/create')" class="btn btn-raised btn-warning">Create</a>
                                 </div>
                                 <div class="col-md-3 text-center">
-                                    <a href="javascript:delay('/reservation/check')" class="btn btn-raised btn-warning">Check</a>
+                                    <a href="javascript:delay('/reservations/check')" class="btn btn-raised btn-warning">Check</a>
                                 </div>
                             </div>
                         </div>

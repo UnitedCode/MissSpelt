@@ -23,4 +23,25 @@ class Reservation
 
         App::get('database')->insert($this->table, $reservation);
     }
+
+    public function fetchUsersReservations()
+    {
+        $contact_value = ($_POST['contact'] == 'phone') ? $_POST['phone'] : $_POST['email'];
+
+        $reservations = [
+            'firstname' => $_POST['firstname'],
+            'lastname' => $_POST['lastname'],
+            'contact_type' => $_POST['contact'],
+            'contact' => $contact_value
+        ];
+
+        return App::get('database')->fetchWhereEquals($this->table, $reservations);
+    }
+
+    public function remove()
+    {
+        $id = ['id' => $_POST['id']];
+
+        App::get('database')->removeById($this->table, $id);
+    }
 }

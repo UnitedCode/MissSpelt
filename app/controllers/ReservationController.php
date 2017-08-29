@@ -18,10 +18,10 @@ class ReservationController
 
     public function store()
     {
-        $reserve = new Reservation();
-        $reserve->save();
+        $reservation = new Reservation();
+        $reservation->save();
 
-        redirect('');
+        redirect('/reservations');
     }
 
     public function check()
@@ -31,6 +31,17 @@ class ReservationController
 
     public function view()
     {
+        $reservation = new Reservation();
+        $usersReservations = $reservation->fetchUsersReservations();
 
+        return view('reservations/show', ['reservations' => $usersReservations]);
+    }
+
+    public function destroy()
+    {
+        $reservation = new Reservation();
+        $reservation->remove();
+
+        redirect('reservations/check');
     }
 }

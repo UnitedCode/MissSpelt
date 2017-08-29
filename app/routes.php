@@ -12,5 +12,6 @@ $router->post('reviews', 'ReviewController@create');
 $router->get('reservations', 'ReservationController@index');
 $router->get('reservations/create', 'ReservationController@create');
 $router->post('reservations/create', 'ReservationController@store');
-$router->get('reservation/check', 'ReservationController@check');
+$router->get('reservations/check', 'ReservationController@check');
 $router->post('reservations/check', 'ReservationController@view');
+$router->post('reservations/cancel', 'ReservationController@destroy');
