@@ -3,7 +3,7 @@
 
 <head>
     <?php require('app/views/partials/meta.view.php')?>
-    <title>MissSpelt!</title>
+    <title>MissSpelt! | Reservations</title>
     <!-- Custom page specific styles -->
     <link href="/public/css/pages/reservations.css" rel="stylesheet">
 </head>

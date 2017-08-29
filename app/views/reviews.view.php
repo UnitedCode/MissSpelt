@@ -3,7 +3,7 @@
 
 <head>
     <?php require('partials/meta.view.php')?>
-    <title>MissSpelt!</title>
+    <title>MissSpelt! | Reviews</title>
     <!-- Custom page specific styles -->
     <link href="/public/css/pages/review.css" rel="stylesheet">
 </head>
