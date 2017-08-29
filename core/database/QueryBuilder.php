@@ -81,7 +81,13 @@ class QueryBuilder
         }
     }
 
-    public function removeById($table, $idArr)
+
+    /**
+     * @param $table
+     * @param $idArr
+     * Deletes a row from the specified table where the id matches the passed in id
+     */
+    public function removeById($table, $id)
     {
         $sql = sprintf('DELETE FROM %s WHERE %s',
             $table,
@@ -91,7 +97,7 @@ class QueryBuilder
         try {
 
             $statement = $this->pdo->prepare($sql);
-            $idArr = [':id' => $idArr['id']];
+            $idArr = [':id' => $id];
             $statement->execute($idArr);
 
         } catch (PDOException $e) {

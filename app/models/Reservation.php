@@ -40,7 +40,7 @@ class Reservation
 
     public function remove()
     {
-        $id = ['id' => $_POST['id']];
+        $id = $_POST['id'];
 
         App::get('database')->removeById($this->table, $id);
     }
