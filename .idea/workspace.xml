@@ -2,17 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33978aff-469b-4fc5-a021-cbda30755bdf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/loyalty.view.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/pages/about.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/pages/check.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/pages/contact.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/pages/create.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/pages/create_review.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/pages/credits.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/pages/deletereserve.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/pages/loyalty.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/pages/menu.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/pages/reservation.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/pages/reservations.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/pages/reserve.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/pages/reviews.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/PagesController.php" afterPath="$PROJECT_DIR$/app/controllers/PagesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ReviewController.php" afterPath="$PROJECT_DIR$/app/controllers/ReviewController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Review.php" afterPath="$PROJECT_DIR$/app/models/Review.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index.view.php" afterPath="$PROJECT_DIR$/app/views/index.view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reviews.view.php" afterPath="$PROJECT_DIR$/app/views/reviews.view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/database/QueryBuilder.php" afterPath="$PROJECT_DIR$/core/database/QueryBuilder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/about.view.php" afterPath="$PROJECT_DIR$/app/views/about.view.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReviewController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ReviewController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/ReviewController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
@@ -52,35 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reservation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/pages/reservation.php">
+      <file leaf-file-name="about.view.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/about.view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="219" column="13" lean-forward="true" selection-start-line="219" selection-start-column="13" selection-end-line="219" selection-end-column="13" />
-              <folding>
-                <marker date="1503942292468" expanded="true" signature="1411:1567" ph="SELECT * FRO... reservations" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reserve.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/pages/reserve.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3360">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1503942292468" expanded="true" signature="2144:2370" ph="INSERT INTO reservations... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loyalty.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/pages/loyalty.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1180">
-              <caret line="74" column="4" lean-forward="false" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
+            <state relative-caret-position="366">
+              <caret line="122" column="24" lean-forward="true" selection-start-line="122" selection-start-column="24" selection-end-line="122" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -143,7 +123,6 @@
         <option value="$PROJECT_DIR$/app/controllers/ReservationsController.php" />
         <option value="$PROJECT_DIR$/public/js/script.js" />
         <option value="$PROJECT_DIR$/app/views/partials/scripts.view.php" />
-        <option value="$PROJECT_DIR$/app/views/about.view.php" />
         <option value="$PROJECT_DIR$/app/views/menu.view.php" />
         <option value="$PROJECT_DIR$/public/js/ripples.min.js" />
         <option value="$PROJECT_DIR$/app/views/contact.view.php" />
@@ -172,6 +151,7 @@
         <option value="$PROJECT_DIR$/app/controllers/PagesController.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/views/loyalty.view.php" />
+        <option value="$PROJECT_DIR$/app/views/about.view.php" />
       </list>
     </option>
   </component>
@@ -273,12 +253,6 @@
             <path>
               <item name="MissSpelt" type="b2602c69:ProjectViewProjectNode" />
               <item name="MissSpelt" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MissSpelt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MissSpelt" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
@@ -320,12 +294,12 @@
       <option name="presentableId" value="Default" />
       <updated>1503943468880</updated>
       <workItem from="1503943470034" duration="13469000" />
-      <workItem from="1503958821248" duration="9688000" />
+      <workItem from="1503958821248" duration="9770000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23157000" />
+    <option name="totallyTimeSpent" value="23239000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1044" extended-state="6" />
@@ -486,14 +460,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/about.view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="148" column="0" lean-forward="true" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/pages/create.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3800">
@@ -572,9 +538,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="36" column="12" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
-          <folding>
-            <marker date="1503942292464" expanded="true" signature="958:1098" ph="INSERT INTO review... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -753,9 +717,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1200">
           <caret line="219" column="13" lean-forward="true" selection-start-line="219" selection-start-column="13" selection-end-line="219" selection-end-column="13" />
-          <folding>
-            <marker date="1503942292468" expanded="true" signature="1411:1567" ph="SELECT * FRO... reservations" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -763,9 +725,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3360">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1503942292468" expanded="true" signature="2144:2370" ph="INSERT INTO reservations... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -781,6 +741,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/about.view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="122" column="24" lean-forward="true" selection-start-line="122" selection-start-column="24" selection-end-line="122" selection-end-column="24" />
           <folding />
         </state>
       </provider>

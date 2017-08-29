@@ -112,7 +112,7 @@
                         <div class="col-md-4 col-md-offset-1">
                             <i class="fa fa-question-circle-o fa-4x faq" aria-hidden="true"></i>
                             <h4>Do you have a loyalty program?</h4>
-                            <p>We sure do! If you are a regular at any of our locations, you can register for our loyalty program <a href="loyalty.html">here</a>.</P>
+                            <p>We sure do! If you are a regular at any of our locations, you can register for our loyalty program <a href="/loyalty">here</a>.</P>
                         </div>
                         <div class="col-md-4 col-md-offset-2">
                             <i class="fa fa-question-circle-o fa-4x faq" aria-hidden="true"></i>
@@ -130,7 +130,7 @@
                         <div class="col-md-4">
                             <i class="fa fa-question-circle-o fa-4x faq" aria-hidden="true"></i>
                             <h4>I have a large group, is there a way to make sure there will be seating for everyone?</h4>
-                            <p>Absolutely! You can make a reservation for any of our locations by filling out <a href="create.html">this</a> online form</P>
+                            <p>Absolutely! You can make a reservation for any of our locations by filling out <a href="/reservations/create">this</a> online form</P>
                         </div>
                         <div class="col-md-4">
                             <i class="fa fa-question-circle-o fa-4x faq" aria-hidden="true"></i>
