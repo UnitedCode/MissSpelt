@@ -84,7 +84,7 @@ class QueryBuilder
 
     /**
      * @param $table
-     * @param $idArr
+     * @param $id
      * Deletes a row from the specified table where the id matches the passed in id
      */
     public function removeById($table, $id)

@@ -28,4 +28,9 @@ class PagesController
     {
         return view('credits');
     }
+
+    public function loyalty()
+    {
+        return view('loyalty');
+    }
 }

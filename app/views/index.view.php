@@ -66,7 +66,7 @@
                         <div class="text-center section-1-desc">
                             <i class="material-icons">&#xE556;</i>
                             <h3>Great Food</h3>
-                            <a href="javascript:delay('pages/menu.html')" class="btn btn-raised btn-warning">Menu</a>
+                            <a href="javascript:delay('/menu')" class="btn btn-raised btn-warning">Menu</a>
                             <p>At MissSpelt! we do our very best to assure that our food is delicious and healthy. Take a look at our menu full of gluten-free meals.</p>
                         </div>
                     </div>
@@ -74,7 +74,7 @@
                         <div class="text-center section-1-desc">
                             <i class="material-icons">&#xE7FB;</i>
                             <h3>Bring Your Friends</h3>
-                            <a href="javascript:delay('pages/reservations.html')" class="btn btn-raised btn-warning">Reservations</a>
+                            <a href="javascript:delay('/reservations')" class="btn btn-raised btn-warning">Reservations</a>
                             <p>Why go to an awesome restaurant by yourself? Call ahead or make an online reservation for you and your friends.</p>
                         </div>
                     </div>
@@ -84,7 +84,7 @@
                         <div class="text-center section-1-desc">
                             <i class="material-icons">&#xE560;</i>
                             <h3>Leave a Review</h3>
-                            <a href="javascript:delay('pages/reviews.html')" class="btn btn-raised btn-warning">Reviews</a>
+                            <a href="javascript:delay('/reviews')" class="btn btn-raised btn-warning">Reviews</a>
                             <p>Did you enjoy your meal with us? Leave a review telling others how awesome it was.</p>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                         <div class="text-center section-1-desc">
                             <i class="material-icons">&#xE32A;</i>
                             <h3>Customer Loyalty</h3>
-                            <a href="javascript:delay('pages/loyalty.html')" class="btn btn-raised btn-warning">Loyalty Program</a>
+                            <a href="javascript:delay('/loyalty')" class="btn btn-raised btn-warning">Loyalty Program</a>
                             <p>Does a gluten-free lifestyle interest you? Check out our customer loyalty program where we offer discounts and specials to regulars in our diners.</p>
                             <p></p>
                         </div>

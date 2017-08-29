@@ -100,7 +100,7 @@
                 <div class="modal-body">
                     <div id="error_msg"></div>
                     <div class="form-card">
-                        <form action="create_review.php" method="post" name="reviews" onsubmit="return validateReview();">
+                        <form action="/reviews" method="POST" name="reviews" onsubmit="return validateReview();">
                             <fieldset>
                                 <div class="form-group">
                                     <h2 class="form-item-title">First Name</h2>

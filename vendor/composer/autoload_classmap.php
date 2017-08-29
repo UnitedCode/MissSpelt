@@ -13,10 +13,10 @@ return array(
     'App\\Core\\Request' => $baseDir . '/core/Request.php',
     'App\\Core\\Router' => $baseDir . '/core/Router.php',
     'App\\Model\\Reservation' => $baseDir . '/app/models/Reservation.php',
+    'App\\Model\\Review' => $baseDir . '/app/models/Review.php',
     'ComposerAutoloaderInitd34184087c0b8773417ebb52be36e493' => $vendorDir . '/composer/autoload_real.php',
     'Composer\\Autoload\\ClassLoader' => $vendorDir . '/composer/ClassLoader.php',
     'Composer\\Autoload\\ComposerStaticInitd34184087c0b8773417ebb52be36e493' => $vendorDir . '/composer/autoload_static.php',
     'Connection' => $baseDir . '/core/database/Connection.php',
     'QueryBuilder' => $baseDir . '/core/database/QueryBuilder.php',
-    'Review' => $baseDir . '/app/models/Review.php',
 );
